@@ -1,0 +1,53 @@
+﻿html
+{
+    font-family: Arial;
+}
+
+body {
+    padding: 40px 17.5% 0 17.5%;
+}
+
+.page-header {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.navbar > a {
+    display: block;
+    float: left;
+    width: 80px;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
+.well {
+    background-color: #EEEEEE;
+    border: 1px solid grey;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    top: 0;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
