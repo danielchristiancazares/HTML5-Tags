@@ -1,14 +1,22 @@
-﻿html
-{
-    font-family: Arial;
-}
+﻿@media (min-width: 1px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 
+  .col-md-6 {
+      position: relative;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+}
 .navcontainer {
     position: fixed;
     top: 0;
     background-color: #F6F6F6;
     width: 100%;
     border-bottom: thin solid #E7E7E7;
+    z-index: 2;
 }
 
 .navlist {
@@ -85,13 +93,11 @@ h1, h2 {
 
 h1 {
     font-size: 36pt;
-    font-weight: 400;
-    margin: 0;
     line-height: normal;
 }
 
 h2 {
-    display: block;
+    font-size: 24pt;
 }
 
 .navbar > a {
@@ -100,10 +106,7 @@ h2 {
     width: 80px;
 }
 
-.col-md-6 {
-    width: 50%;
-    float: left;
-}
+
 
 pre {
     display: block;
@@ -119,6 +122,8 @@ pre {
     color: inherit;
     background-color: #eee;
 }
+
+
 
 /*Dennis please fix the table look to mimic more closely the bootstrap look*/
 table {
@@ -201,4 +206,18 @@ footer {
     padding-top: 10px;
     border-top: 1px solid #EEEEEE;
     margin-bottom: 50px;
+}
+@media (min-width: 1007px) {
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .col-md-6 {
+      position: relative;
+      width: 50%;
+      float: left;
+      min-height: 100px;
+      padding-right: 0px;
+      padding-left: 0px;
+  }
 }
