@@ -113,9 +113,9 @@
 }
 
 .navsearch {
-    display:inline;
-    float:right;
-    padding-top: 10px;
+    float: right;
+    padding-top: 8px;
+    display: inline;
 }
 
 .navlist a {
@@ -173,6 +173,11 @@ h2 {
     display: block;
     float: left;
     width: 80px;
+}
+
+.input {
+    padding: 8px;
+    border-radius: 5px;
 }
 
 pre {
@@ -248,6 +253,10 @@ ul {
     font-size: 18px;
     line-height: 1.3333333;
     border-radius: 6px;
+}
+
+.seealso > ul {
+    padding-left: 50px;
 }
 
 .btn-success {
