@@ -8,7 +8,28 @@
       position: relative;
       padding-right: 15px;
       padding-left: 15px;
+      min-height: 1px; 
+      width: 100%; 
   }
+}
+
+@media (min-width: 1007px) {
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .col-md-6 {
+      position: relative;
+      width: 100%;
+      float: left;
+      min-height: 1px;
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+}
+
+.content {
+  width: 80%;
 }
 .navcontainer {
     position: fixed;
@@ -17,6 +38,7 @@
     width: 100%;
     border-bottom: thin solid #E7E7E7;
     z-index: 2;
+    box-sizing: border-box; 
 }
 
 .navlist {
@@ -207,17 +229,4 @@ footer {
     border-top: 1px solid #EEEEEE;
     margin-bottom: 50px;
 }
-@media (min-width: 1007px) {
-  .row {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  .col-md-6 {
-      position: relative;
-      width: 50%;
-      float: left;
-      min-height: 100px;
-      padding-right: 0px;
-      padding-left: 0px;
-  }
-}
+
