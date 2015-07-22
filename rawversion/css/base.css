@@ -222,6 +222,10 @@ ul {
     border-radius: 6px;
 }
 
+.seealso > ul {
+    padding-left: 50px;
+}
+
 .btn-success {
     color: #fff;
     background-color: #5cb85c;
