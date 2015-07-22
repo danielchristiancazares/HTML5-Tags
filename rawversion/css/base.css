@@ -5,8 +5,9 @@
 
 .navcontainer {
     position: fixed;
+    top: 0;
     background-color: #F6F6F6;
-    width: auto;
+    width: 100%;
     border-bottom: thin solid #E1E1E1;
 }
 
@@ -28,7 +29,6 @@
 .active {
     background-color: #E1E1E1;
     padding: 20px;
-
 }
 
 .navsearch {
@@ -47,7 +47,8 @@
 }
 
 body {
-    margin: 0 17.5% 0 17.5%;
+    margin: 0;
+    padding: 0;
 }
 
 .page-header {
