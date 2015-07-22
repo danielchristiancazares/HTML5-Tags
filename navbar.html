@@ -6,14 +6,14 @@
   body {
   margin: 0;
   padding: 0;
-  background: #ccc;
   font-family: arial;
 }
 
   .navcontainer {
     position: fixed;
-    background-color: grey;
+    background-color: #F6F6F6;
     width: 100%;
+    border-bottom: thin solid #E1E1E1;
   }
   .navlist {
     overflow: hidden;
@@ -29,12 +29,21 @@
     line-height: 50px;
   }
   .active {
-    background-color: grey;
+    background-color: #E1E1E1;
+    height: 50px;
+    line-height: 50px;
   }
   .navsearch {
     display:inline;
     float:right;
     padding-top: 10px;
+  }
+  .navlist a {
+    color: #646464;
+    text-decoration: none;
+  }
+  .navlist a:hover {
+    color: #262626;
   }
 </style>
 </head>
