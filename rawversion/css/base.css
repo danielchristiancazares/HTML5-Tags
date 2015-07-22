@@ -112,6 +112,14 @@ pre {
     margin: 1em 0px;
 }
 
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+
 /*Dennis please fix the table look to mimic more closely the bootstrap look*/
 table {
     width: 100%;
@@ -128,6 +136,7 @@ table {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
+
 
 
 th {
