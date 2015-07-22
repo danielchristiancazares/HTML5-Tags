@@ -145,9 +145,6 @@ pre {
     background-color: #eee;
 }
 
-
-
-/*Dennis please fix the table look to mimic more closely the bootstrap look*/
 table {
     width: 100%;
     display: table;
@@ -230,3 +227,26 @@ footer {
     margin-bottom: 50px;
 }
 
+@media (min-width: 1007px) {
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .col-md-6 {
+      position: relative;
+      width: 49%;
+      float: left;
+      min-height: 100px;
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+
+  .leftbox {
+      margin-right: 1%;
+  }
+
+  .rightbox {
+      margin-left: 1%;
+  }
+
+}
