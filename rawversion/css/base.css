@@ -51,6 +51,10 @@ body {
     padding: 0;
 }
 
+.content {
+    margin: 0 20% 0 20%;
+}
+
 .page-header {
     padding-top: 80px;
     padding-bottom: 5px;
@@ -76,13 +80,18 @@ h2 {
     float: left;
 }
 
+/*Dennis please fix the table look to mimic more closely the bootstrap look*/
 table {
     width: 100%;
 }
 
 th {
     font-weight: bold;
-    text-align: left
+    text-align: left;
+}
+
+td {
+    border: 1px inset #E0E0E0;
 }
 
 .well {
@@ -91,4 +100,11 @@ th {
     border-radius: 10px;
     min-height: 150px;
     padding: 10px;
+}
+
+footer {
+    margin-top: 100px;
+    padding-top: 10px;
+    border-top: 1px solid #EEEEEE;
+    margin-bottom: 50px;
 }
