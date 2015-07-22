@@ -82,9 +82,9 @@
 }
 
 .navsearch {
-    display:inline;
-    float:right;
-    padding-top: 10px;
+    float: right;
+    padding-top: 8px;
+    display: inline;
 }
 
 .navlist a {
@@ -148,7 +148,10 @@ h2 {
     width: 80px;
 }
 
-
+.input {
+    padding: 8px;
+    border-radius: 5px;
+}
 
 pre {
     display: block;
