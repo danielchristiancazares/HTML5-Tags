@@ -176,8 +176,10 @@ h2 {
 }
 
 .input {
-    padding: 8px;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
 }
 
 pre {
