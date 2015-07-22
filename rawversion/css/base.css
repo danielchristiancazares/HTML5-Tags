@@ -28,7 +28,7 @@
   }
 }
 
-.container {
+.container, footer {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -36,17 +36,17 @@
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container, footer {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container, footer {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container, footer {
     width: 1170px;
   }
 }
@@ -167,29 +167,22 @@ pre {
 
 table {
     width: 100%;
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: grey;
-    width: 100%;
-    max-width: 100%;
+    border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-.panel > .table:last-child, .panel > .table-responsive:last-child > .table:last-child {
+table, th, td {
+    border: 1px solid #E0E0E0;
+}
+
+.compatability:last-child {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
-
-
 th {
     font-weight: bold;
     text-align: left;
-}
-
-td {
-    border: 1px inset #E0E0E0;
 }
 
 .well {
@@ -241,10 +234,8 @@ a {
 }
 
 footer {
-    margin-top: 100px;
     padding-top: 10px;
     border-top: 1px solid #EEEEEE;
-    margin-bottom: 50px;
 }
 
 @media (min-width: 1007px) {
