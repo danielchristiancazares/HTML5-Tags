@@ -76,6 +76,15 @@ h2 {
     float: left;
 }
 
+table {
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+    text-align: left
+}
+
 .well {
     background-color: #EEEEEE;
     border: 1px solid grey;
