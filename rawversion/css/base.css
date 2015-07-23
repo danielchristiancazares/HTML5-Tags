@@ -25,19 +25,146 @@
       padding-right: 0px;
       padding-left: 0px;
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+    padding-top: 150px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333333; 
+ } 
+  .container, footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .navcontainer {
+      position: fixed;
+      top: 0;
+      background-color: #F6F6F6;
+      width: 100%;
+      border-bottom: thin solid #E7E7E7;
+      z-index: 2;
+      box-sizing: border-box;
+  } 
+  .navlist {
+      overflow: hidden;
+      list-style: none;
+      display: inline-block;
+      float:left;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+  }
+  .navcontainer li {
+      display: block;
+      height: 50px;
+      line-height: 30px;
+      font-size: 14px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
+  .navsearch {
+      float: left;
+      padding-top: 8px;
+      display: inline-block;
+      width: 100%;
+      height: 30px;
+  }
+
+
+  .jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    color: inherit;
+    background-color: #eee;
+  }
+
+  .jumbotron h1 {
+      text-align:center; font-size: 250%; line-height: 93%;
+  }
+  .jumbotron p { 
+      text-align:center; font-size: 150%; line-height: 93%;
+  }
+  
+  .input {
+      width: 100%;
+  }
+
+
+
 }
 
-.container, footer {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 @media (min-width: 768px) {
   .container, footer {
     width: 750px;
   }
+
+  .navcontainer {
+      position: fixed;
+      top: 0;
+      background-color: #F6F6F6;
+      width: 100%;
+      border-bottom: thin solid #E7E7E7;
+      z-index: 2;
+      box-sizing: border-box; 
+  } 
+  .navlist {
+      overflow: hidden;
+      list-style: none;
+      display: inline-block;
+      float:left;
+      margin: 0;
+      padding: 0;
+      width: 60%;
+  }
+  .navcontainer li {
+      display: inline;
+      height: 50px;
+      line-height: 50px;
+      font-size: 14px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  .navsearch {
+      float: right;
+      padding-top: 8px;
+      display: inline-block;
+      width: 180px;
+  }
+
+  body {padding-top: 0px;}
+
+  .jumbotron {
+      padding-top: 0px; 
+      padding-bottom: 49px;
+  }
+  .jumbotron h1 {
+      text-align:center; font-size: 450%; line-height: 93%;
+  }
+  .jumbotron p { 
+      text-align:center; font-size: 150%; line-height: 93%;
+  }
+
+  .input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+
+
 }
 @media (min-width: 992px) {
   .container, footer {
@@ -55,8 +182,7 @@
       width: 49%;
       float: left;
       min-height: 100px;
-      padding-right: 0px;
-      padding-left: 0px;
+
   }
 
   .leftbox {
@@ -74,43 +200,7 @@
   }
 }
 
-.navcontainer {
-    position: fixed;
-    top: 0;
-    background-color: #F6F6F6;
-    width: 100%;
-    border-bottom: thin solid #E7E7E7;
-    z-index: 2;
-    box-sizing: border-box; 
-}
 
-
-
-.navlist {
-    overflow: hidden;
-    list-style: none;
-    display: inline-block;
-    float:left;
-    margin: 0;
-    padding: 0;
-}
-
-.navcontainer li {
-    display: inline;
-    height: 50px;
-    line-height: 50px;
-    font-size: 14px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.navsearch {
-    float: right;
-    padding-top: 8px;
-    display: inline;
-}
 
 .navlist a {
     color: #777777;
@@ -128,14 +218,7 @@
     color: #555555;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 1.42857143;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333333; 
-}
+
 .content {
     margin: 0 3% 0 3%;
 }
@@ -169,12 +252,6 @@ h2 {
     width: 80px;
 }
 
-.input {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 6px 12px;
-    font-size: 14px;
-}
 
 pre {
     display: block;
@@ -183,13 +260,7 @@ pre {
     margin: 1em 0px;
 }
 
-.jumbotron {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    color: inherit;
-    background-color: #eee;
-}
+
 
 table {
     width: 100%;
@@ -269,4 +340,9 @@ a {
 footer {
     padding-top: 10px;
     border-top: 1px solid #EEEEEE;
+}
+
+
+* {
+    box-sizing: border-box;
 }
