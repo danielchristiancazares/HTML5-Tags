@@ -9,7 +9,6 @@
       padding-right: 15px;
       padding-left: 15px;
       min-height: 1px; 
-      width: 100%; 
   }
 }
 
@@ -253,7 +252,7 @@ ul {
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
-  color: #fff;
+  color: #FFFFFF;
   background-color: #5cb85c;
   border-color: #4cae4c;
 }

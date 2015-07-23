@@ -18,6 +18,14 @@
     </script>
     <style>
       textarea { resize: none; }
+    body {
+  padding-top: 50px;
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 170px;
+  }
+}
     </style>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,19 +39,16 @@
   </head>
   <body>
   <!-- Navigation -->
-<div class="container">
-  <h1>Search HTML</h1>           
-  <ul class="nav nav-pills" role="tablist">
-    <li><a href="#"><span class="glyphicon glyphicon-home"> Home</span></a></li>
-    <li class="active"><a href="#"><span class="glyphicon glyphicon-folder-open"> HTML</span></a></li>  
-  </ul>    
-    <h2><span class="label label-info">&lt;ul&gt; element</span></h2>
-  <ul class="pager">
-
-    <li><a href="#">Previous</a></li>
-    <li><a href="#">Next</a></li>
-  </ul>
-</div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>            
+            <li><a href="#">HTML Tags</a></li>
+            <li><a href="#">HTML Attributes</a></li>
+		</ul>
+		<form class="navbar-form navbar-right">
+              <input class="form-control" type="text" placeholder="Search here">
+        </form>
+	</nav>
 
 <!-- Content -->
     <div class="container">
