@@ -8,8 +8,73 @@
       position: relative;
       padding-right: 15px;
       padding-left: 15px;
+      min-height: 1px; 
+      width: 100%; 
   }
 }
+
+@media (min-width: 1007px) {
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .col-md-6 {
+      position: relative;
+      width: 100%;
+      float: left;
+      min-height: 1px;
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+}
+
+.container, footer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container, footer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container, footer {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1007px) {
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .col-md-6 {
+      position: relative;
+      width: 49%;
+      float: left;
+      min-height: 100px;
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+
+  .leftbox {
+      margin-right: 1%;
+  }
+
+  .rightbox {
+      margin-left: 1%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, footer {
+    width: 1170px;
+  }
+}
+
 .navcontainer {
     position: fixed;
     top: 0;
@@ -17,7 +82,10 @@
     width: 100%;
     border-bottom: thin solid #E7E7E7;
     z-index: 2;
+    box-sizing: border-box; 
 }
+
+
 
 .navlist {
     overflow: hidden;
@@ -40,9 +108,9 @@
 }
 
 .navsearch {
-    display:inline;
-    float:right;
-    padding-top: 10px;
+    float: right;
+    padding-top: 8px;
+    display: inline;
 }
 
 .navlist a {
@@ -68,10 +136,6 @@ body {
     line-height: 1.42857143;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333333; 
-}
-html {
-    font-size: 10px;
-    font-family: sans-serif;
 }
 .content {
     margin: 0 3% 0 3%;
@@ -106,7 +170,12 @@ h2 {
     width: 80px;
 }
 
-
+.input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
 
 pre {
     display: block;
@@ -125,29 +194,36 @@ pre {
 
 table {
     width: 100%;
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: grey;
-    width: 100%;
-    max-width: 100%;
+    border-collapse: collapse;
     margin-bottom: 20px;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
 }
 
-.panel > .table:last-child, .panel > .table-responsive:last-child > .table:last-child {
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
+tr:last-child td:first-child { border-bottom-left-radius: 5px; }
+tr:last-child td:last-child { border-bottom-right-radius: 5px; }
+
+.table {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+
 }
 
-
+.heading {
+    color: #333333;
+    background-color: #F5F5F5;
+    border-color: #DDDDDD;
+    padding: 10px 10px 10px 10px; 
+}
 
 th {
     font-weight: bold;
     text-align: left;
-}
-
-td {
-    border: 1px inset #E0E0E0;
+    
 }
 
 .well {
@@ -187,6 +263,10 @@ ul {
     border-radius: 6px;
 }
 
+.seealso > ul {
+    padding-left: 50px;
+}
+
 .btn-success {
     color: #fff;
     background-color: #5cb85c;
@@ -199,31 +279,6 @@ a {
 }
 
 footer {
-    margin-top: 100px;
     padding-top: 10px;
     border-top: 1px solid #EEEEEE;
-    margin-bottom: 50px;
-}
-@media (min-width: 1007px) {
-  .row {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  .col-md-6 {
-      position: relative;
-      width: 49%;
-      float: left;
-      min-height: 100px;
-      padding-right: 0px;
-      padding-left: 0px;
-  }
-
-  .leftbox {
-      margin-right: 1%;
-  }
-
-  .rightbox {
-      margin-left: 1%;
-  }
-
 }
