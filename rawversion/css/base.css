@@ -182,12 +182,12 @@ table {
 }
 
 .table {
-    border-collapse: collapse !important;
+    border-collapse: collapse;
 }
 
 .table td,
 .table th {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
 }
   
 .table > thead > tr > th,
