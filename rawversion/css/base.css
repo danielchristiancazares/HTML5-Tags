@@ -9,7 +9,21 @@
       padding-right: 15px;
       padding-left: 15px;
       min-height: 1px; 
-      width: 100%; 
+  }
+}
+
+@media (min-width: 1007px) {
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .col-md-6 {
+      position: relative;
+      width: 100%;
+      float: left;
+      min-height: 1px;
+      padding-right: 0px;
+      padding-left: 0px;
   }
 
   body {
@@ -250,62 +264,21 @@ pre {
 
 table {
     width: 100%;
-}
-
-.table {
+    margin-bottom: 20px;
     border-collapse: collapse;
 }
 
-.table td,
-.table th {
-    background-color: #FFFFFF;
-}
-  
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > td {
-  padding: 8px;
-  line-height: 1.428;
-  vertical-align: top;
-  border-top: 1px solid #DDDDDD;
+table, tr, td, th {
+    border: 1px solid #E0E0E0;
+    padding: 10px;
 }
 
-.panel-heading {
-  padding: 10px 15px;
-  border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-.panel-default > .panel-heading {
-  color: #333333;
-  background-color: #F5F5F5;
-  border-color: #DDDD;
-}
-
-.panel {
-  margin-bottom: 20px;
-  background-color: #DDDDDD;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.panel > .table:last-child > tbody:last-child > tr:last-child td:first-child {
-  border-bottom-left-radius: 3px;
-}
-.panel > .table:last-child > tbody:last-child > tr:last-child td:last-child {
-  border-bottom-right-radius: 3px;
-}
-.panel > .panel-body + .table {
-  border-top: 1px solid #DDDDDD;
-}
-.panel > .table > tbody:first-child > tr:first-child th,
-.panel > .table > tbody:first-child > tr:first-child td {
-  border-top: 0;
-}
-
-.heading {
+.tablehead {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
     color: #333333;
     background-color: #F5F5F5;
     border-color: #DDDDDD;
@@ -315,12 +288,7 @@ table {
 th {
     font-weight: bold;
     text-align: left;
-    padding: 10px 10px 0px 10px; 
     
-}
-
-td {
-    padding: 10px 10px 0px 10px; 
 }
 
 .well {
@@ -355,7 +323,7 @@ ul {
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
-  color: #fff;
+  color: #FFFFFF;
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
@@ -363,7 +331,6 @@ ul {
 .seealso > ul {
     padding-left: 50px;
 }
-
 
 a {
     color: #337ab7;
