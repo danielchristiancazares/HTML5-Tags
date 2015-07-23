@@ -141,17 +141,13 @@
   .jumbotron p { 
       text-align:center; font-size: 150%; line-height: 93%;
   }
-
+}
   .input {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 6px 12px;
     font-size: 14px;
   }
-
-
-
-}
 @media (min-width: 992px) {
   .container, footer {
     width: 970px;
@@ -281,7 +277,7 @@ table {
 .panel-default > .panel-heading {
   color: #333333;
   background-color: #F5F5F5;
-  border-color: #DDDD;
+  border-color: #DDD;
 }
 
 .panel {
