@@ -3,51 +3,47 @@
 <head>
 	<title>Global Attributes</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<style>
-		@media (max-width: 768px) {
-		body {padding-top: 170px;}
-	}
+	<link rel="stylesheet" href="css/base.css" type="text/css">
+	<style type="text/css">
+		tr.oddRow td {background-color: #F9F9F9;}
+		table {border-collapse: collapse; }
+		table, th, td { border: 1px solid #DDDDDD;}
+		td {padding: 8px}
 	</style>
-
-
 </head>
 <body>
-
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<ul class="nav navbar-nav">
-			<li><a href="home.html">Home</a></li>            
-            <li><a href="index.html">Index of Tags</a></li>
-            <li class="active"><a href="globalattr.html">HTML Global Attributes</a></li>
+	<div class="navcontainer">
+	<nav>
+		<ul class="navlist">
+			<li><a href="home.html">Home</a></li>						
+			<li><a href="index.html">Index of Tags</a></li>
+			<li class="active"><a href="globalattr.html">HTML Global Attributes</a></li>
 		</ul>
-		<form class="navbar-form navbar-right">
-              <input class="form-control" type="text" placeholder="Search here">
-        </form>
+	
+		<form class="navsearch">
+			<input class="input" type="text" placeholder="Search here">
+		</form>
 	</nav>
+	</div>
 
 
-	<div class="jumbotron" style="margin-top:50px">
-		<h1 style="text-align:center;">Global Attributes</h1>
+	<div class="jumbotron" style="padding-top: 54px; padding-bottom: 49px; margin-top: -30px">
+		<h1>Global Attributes</h1>
 	</div>
 
 <div class="container">
-
-
 	<table class="table table-bordered table-striped table-responsive">
-		<tr>
-			<td style="font-size:x-large; font-weight: 900;">Attribute</td>
-            <td style="font-size:x-large; font-weight: 900">Values (if necessary)</td>
-			<td style="font-size:x-large; font-weight: 900;">Description</td>
+		<tr class="oddRow">
+			<td style="font-size:x-large;">Tag</td>
+            <td style="font-size:x-large;">Values</td>
+			<td style="font-size:x-large;">Description</td>
 		</tr>
 		<tr>
 			<td>accesskey</td>
             <td><i>keyboard key (e.g. "a" or "c")</i></td>
 			<td>Specifies a shortcut key to activate/focus a tag. (Depends on browser, but usually Alt + accesskey is the way to use the accesskey)</td>
 		</tr>
-		<tr>
+		<tr class="oddRow">
 			<td>class</td>
             <td><i>classname(s) (user-defined)</i></td>
 			<td>Specifies one or more class names for an element which will be subject to changes from the referenced style sheet.</td>
@@ -57,17 +53,17 @@
             <td>true<br />false</td>
 			<td>Specifies whether the content of the element is editable.</td>
 		</tr>
-		<tr>
+		<tr class="oddRow">
 			<td>contextmenu</td>
             <td><i>menu_id (user-defined)</i></td>
 			<td>Specifies a context menu (given by <i>menu_id</i>) for an element. The menu appears upon right-clicking the element.</td>
 		</tr>
 		<tr>
-			<td>data-*</td>
+            <td>data-*</td>
             <td><i>somedata (user-defined)</i></td>
 			<td>Used to store custom data private to the page or app.</td>
 		</tr>
-		<tr>
+		<tr class="oddRow">
 			<td>dir</td>
             <td>ltr<br />rtl<br />auto</td>
 			<td>Specifies the text direction of an element's contents. ltr is left to right, and rtl is right to left. auto lets the browser figure out the text direction.</td>
@@ -77,17 +73,17 @@
             <td>true<br />false<br /></td>
 			<td>Specifies whether an element is draggable. auto uses the default behavior of the browser.</td>
 		</tr>
-		<tr>
+		<tr class="oddRow">
 			<td>dropzone</td>
             <td>copy<br />move<br />link</td>
 			<td>Specifies whether the dragged data when dropped is copied, moved, or linked<./td>
 		</tr>
-        <tr>
+		<tr>
 			<td>hidden</td>
             <td><i>N/A</i></td>
 			<td>Specifies that the element is not visible.</td>
         </tr>
-		<tr>
+		<tr class="oddRow">
 			<td>id</td>
             <td><i>idname (user-defined)</i></td>
 			<td>Specifies a unique id for the element.</td>
@@ -97,7 +93,7 @@
             <td><i>language_code</i></td>
 			<td>Specifies the language code for the element's content.</td>
 		</tr>
-		<tr>
+		<tr class="oddRow">
 			<td>spellcheck</td>
             <td>true<br />false</td>
 			<td>Specifies whether element should have its spelling and grammar checked.</td>
@@ -107,7 +103,7 @@
             <td><i>style_definitions (user-defined, in accordance to CSS)</i></td>
 			<td>Specifies an inline CSS style for an element.</td>
 		</tr>
-		<tr>
+		<tr class="oddRow">
 			<td>tabindex</td>
             <td><i>number</i></td>
 			<td>Specifies the tabbing order of an element.</td>
@@ -117,7 +113,7 @@
             <td><i>text (user-defined)</i></td>
 			<td>Specifies extra information about an element.</td>
 		</tr>
-		<tr>
+		<tr class="oddRow">
 			<td>translate</td>
             <td>true<br />false</td>
 			<td>Specifies whether the content should be translated</td>
