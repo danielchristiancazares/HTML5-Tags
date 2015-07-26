@@ -374,7 +374,9 @@ td {
 .catbtn {
   display: block;
   width:100%;
-  margin-bottom: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
   font-weight: normal;
   white-space: nowrap;
   vertical-align: middle;
@@ -463,4 +465,12 @@ a:visited {
 
 a:hover{
     text-decoration: underline;
+}
+
+.catbtn.hover, .catbtn:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40;
+    cursor: pointer;
+    text-decoration:none  !important;;
 }
