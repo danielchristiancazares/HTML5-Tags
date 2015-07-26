@@ -374,7 +374,9 @@ td {
 .catbtn {
   display: block;
   width:100%;
-  margin-bottom: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
   font-weight: normal;
   white-space: nowrap;
   vertical-align: middle;
