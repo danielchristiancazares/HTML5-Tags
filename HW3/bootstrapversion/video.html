@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>video Tag</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+		body {
+			margin-bottom: -60px;
+		}
+		h1.page-header { margin-top:100px;}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<ul class="nav navbar-nav">
+			<li><a href="index.html">Home</a></li>						
+			<li><a href="indexlist.html">Index of Tags</a></li>
+			<li><a href="globalattr.html">HTML Global Attributes</a></li>
+		</ul>
+		<form class="navbar-form navbar-right">
+              <input class="form-control" type="text" placeholder="Search here">
+        </form>
+	</nav>
+    <div class="container">      		
+			<h1 class="page-header">&lt;video&gt; Tag</h1>
+	
+			<!--Description-->
+		    <section>
+		        <h2>Description:</h2>
+		        <p>Denotes a video.</p>
+		    </section>
+		
+		<div class="row">
+			<!--Example-->
+		    <section class="col-md-6">
+		        <h2>Example:</h2>
+		        <pre>
+&lt;video width="360" height="240" controls&gt;
+    &lt;source src="assets/SampleVideo_360x240_1mb.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+                </pre>
+		    </section>
+			<section class="col-md-6">
+                <h2>Result:</h2>
+		        <video width="360" height="240" controls> 
+                    <source src="assets/SampleVideo_360x240_1mb.mp4" type="video/mp4">
+                </video>
+		    </section>
+		</div>
+
+        <!--DIY Button-->
+        <section class="panel-body">
+            <div style="text-align: center">
+                <a href="#" class="btn btn-lg btn-success" role="button">Try it yourself!</a>
+            </div>            
+        </section>
+		
+        <!--Tag-Specific Attributes-->
+        <section class="panel panel-default">
+            <div class="panel-heading">Tag-Specific Attributes</div>
+            <table class="table">
+                <tr>
+                    <th>Tag</th>
+                    <th>Input Values</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td><i>N/A</i></td>
+                    <td>Specifies that the video will start playing as soon as it is ready</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td><i>N/A</i></td>
+                    <td>Specifies that video controls should be displayed (such as play, pause, and mute).</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td><i>pixels</i></td>
+                    <td>Sets the height of the video player</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td><i>N/A</i></td>
+                    <td>Specifies that the video will start over again every time it is finished</td>
+                </tr>
+                <tr>
+                    <td>muted</td>
+                    <td><i>N/A</i></td>
+                    <td>Specifies that the video will be muted</td>
+                </tr>
+                <tr>
+                    <td>poster</td>
+                    <td><i>URL</i></td>
+                    <td>Specifies an image to shown while the video is downloading, or until the user hits the play button</td>
+                </tr>
+                <tr>
+                    <td>preload</td>
+                    <td>auto<br />metadata<br />none</td>
+                    <td>Specifies if and how the author thinks the video should be loaded when the page loads</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td><i>URL</i></td>
+                    <td>Specifies the URL of the video file</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td><i>pixels</i></td>
+                    <td>Sets the width of the video player</td>
+                </tr>
+            </table>
+        </section>
+
+        <!--Compatibility-->
+		<section class="panel panel-default">
+			<div class="panel-heading">Compatibility</div>
+			<table class="table">
+				<tr>
+					<th>Browser</th>
+					<th>Support</th>
+				</tr>
+				<tr>
+					<td>Chrome</td>
+					<td>4.0</td>
+				</tr>
+				<tr>
+					<td>Firefox</td>
+					<td>3.5</td>
+				</tr>
+				<tr>
+					<td>Internet Explorer</td>
+					<td>9.0</td>
+				</tr>
+				<tr>
+					<td>Opera</td>
+					<td>10.5</td>
+				</tr>
+			</table>
+		</section>
+		
+		<!--See Also-->
+		
+	</div>
+	<div class="jumbotron">
+		<!--Footer-->
+		<footer class="container">
+			<address>
+				Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+				Visit us at:<br>
+				Example.com<br>
+				Box 564, Disneyland<br>
+				USA
+			</address>
+		</footer>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
