@@ -27,7 +27,7 @@
       snapshot.forEach(function(childSnapshot) {
         var key = childSnapshot.key();
         var childData = childSnapshot.val();
-        $("#categoryList").append("<a href=\"#\"><button type=\"button\" class=\"btn btn-primary btn-lg btn-block\" title=\"Defines the structure of the HTML document.\">"+childData+"</button></a>");
+        $("#categoryList").append("<a href=\""+childData+"\"><button type=\"button\" class=\"btn btn-primary btn-lg btn-block\" title=\"Defines the structure of the HTML document.\">"+key+"</button></a>");
       });
     });
 
