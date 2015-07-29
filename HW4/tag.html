@@ -18,12 +18,12 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script>
       /*
-       * getUrlVars() - Retrieves the GET parameter 'id' to search the Firebase database.
+       * getUrlVars() - Retrieves the GET parameter 'id' used in searching the Firebase database.
        * 
        * No parameters.
        *
        */
-      function getUrlVars() {
+      function getParam() {
         var vars = {};
         var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
           vars[key] = value;
@@ -31,31 +31,30 @@
         return vars;
       }
       
-      var first = getUrlVars()["id"];
-
-      // The page must load first otherwise it will not find the required elements.
-      window.onload = function () {
-        // Change the header to the appropriate tag name.
+      var first = getParam()["id"];
+      var category;
+      var description;
+      var example;
+      var result;
+      
+      // Connect to our Firebase database.
+      var tagSearch = new Firebase('https://boiling-heat-3594.firebaseio.com');
+      var htmlForPath = {};
+        
+      // Search the database for the rest of the page's information.
+      tagSearch.child("tags/<"+first+">").on("value", function(snapshot) {
+        category = snapshot.child("category").val();
+        description = snapshot.child("description").val();
+        example = snapshot.child("example").val();
+        result = snapshot.child("result").val();
+        
         document.getElementById("tagName").innerHTML = "&lt;" + first + "&gt; Element";
         document.title = "<" + first + "> Element";
-        // Connect to our Firebase database.
-        var tagSearch = new Firebase('https://boiling-heat-3594.firebaseio.com');
-        var htmlForPath = {};
-        
-        // Search the database for the rest of the page's information.
-        tagSearch.child("tags/<"+first+">").on("value", function(snapshot) {
-          var category = snapshot.child("category").val();
-          var description = snapshot.child("description").val();
-          var example = snapshot.child("example").val();
-          var result = snapshot.child("result").val();
-          
-          document.getElementById("category").innerHTML = category;
-          document.getElementById("description").innerHTML = description;
-          document.getElementById("example").innerHTML = example;
-          document.getElementById("result").innerHTML = result;
-          
+        document.getElementById("category").innerHTML = category;
+        document.getElementById("description").innerHTML = description;
+        document.getElementById("example").innerHTML = example;
+        document.getElementById("result").innerHTML = result;
         });
-      }
 </script>
 </head>
 <body>

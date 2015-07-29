@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<style>
 		@media (max-width: 768px) {
@@ -13,8 +14,7 @@
 	}
 	</style>
 
-  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
 
 </head>
 <body>
@@ -24,6 +24,8 @@
     var htmlForPath = {};
   
     categoryList.child("categories").on("value", function(snapshot) {
+      
+      // Retrieves every category from the database and creates a button for it.
       snapshot.forEach(function(childSnapshot) {
         var key = childSnapshot.key();
         var childData = childSnapshot.val();
