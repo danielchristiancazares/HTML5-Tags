@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ul Tag</title>
+    <title id="tile"></title>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="css/bootstrap.css">
   <style>
@@ -37,7 +37,7 @@
       window.onload = function () {
         // Change the header to the appropriate tag name.
         document.getElementById("tagName").innerHTML = "&lt;" + first + "&gt; Element";
-        
+        document.title = "<" + first + "> Element";
         // Connect to our Firebase database.
         var tagSearch = new Firebase('https://boiling-heat-3594.firebaseio.com');
         var htmlForPath = {};
@@ -87,23 +87,11 @@
 			<!--Example-->
 		    <section class="col-md-6">
 		        <h2>Example:</h2>
-		        <pre id="example">
-&lt;ul&gt;
-    &lt;li&gt;Water&lt;/li&gt;
-    &lt;li&gt;Milkshake&lt;/li&gt;
-    &lt;li&gt;Coffee&lt;/li&gt;
-    &lt;li&gt;Smoothie&lt;/li&gt;
-&lt;/ul&gt;
-                </pre>
+		        <pre id="example"></pre>
 		    </section>
 			<section class="col-md-6">
 		    	<h2>Result:</h2>
-		        <ul class="well" id="result">
-		            <li>Water</li>
-		            <li>Milkshake</li>
-		            <li>Coffee</li>
-		            <li>Smoothie</li>
-		        </ul>
+		        <p class="well" id="result"></pre>
 		    </section>
 		</div>
 
