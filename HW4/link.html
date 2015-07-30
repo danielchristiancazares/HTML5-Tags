@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Group 21 Web App | Link Tags</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<style>
+		@media (max-width: 768px) {
+		body {padding-top: 170px;}
+	}
+	</style>
+
+    
+
+</head>
+<body>
+    
+    <script>
+        var tagList = new Firebase('https://boiling-heat-3594.firebaseio.com');
+        var htmlForPath = {};
+        tagList.child("tags").on("value", function (snapshot) {
+            snapshot.forEach(function (tagChild) {
+                var tagName = tagChild.key();
+                var tagDesc = tagChild.child("description").val();
+                var tagCat = tagChild.child("category").val();
+                if ( tagCat == "Link Tags" )
+                $("#tagList").append("<tr><td><a href=\"tag.html?id=" + tagName + "\">" + tagName + "</a></td><td>" + tagDesc + "</td> </tr>");
+            })
+        });
+    </script>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<ul class="nav navbar-nav">
+			<li><a href="index.html">Home</a></li>            
+      <li class="active"><a href="indexlist.html">Index of Tags</a></li>
+      <li><a href="globalattr.html">HTML Global Attributes</a></li>
+		</ul>
+		<form class="navbar-form navbar-right">
+              <input class="form-control" type="text" placeholder="Search here">
+        </form>
+	</nav>
+
+
+	<div class="jumbotron" style="margin-top:50px">
+		<h1 style="text-align:center;">Link Tags</h1>
+	</div>
+
+<div class="container">
+
+
+	<table class="table table-bordered table-striped table-responsive" id="tagList">
+		<tr>
+			<td style="font-size:x-large; font-weight 1000;">Tag</td>
+			<td style="font-size:x-large; font-weight 1000;">Description</td>
+		</tr>		
+	</table>
+		 
+</div>
+	<!-- Footer -->
+	<div class="jumbotron" >
+		<footer class="container">
+			<address>
+				Written by <a href="mailto:webmaster@example.com">Group 21</a>.<br> 
+				Visit us at:<br>
+				Example.com<br>
+				Box 564, Disneyland<br>
+				USA
+			</address>
+		</footer>
+	</div>
+</body>
+</html>
+
