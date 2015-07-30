@@ -240,7 +240,7 @@
       "example":"&lt;form name=\"testForm\" method=\"GET\" enctype=\"text/plain\" autocomplete=\"on\" action=\"process.jsp\" accept-charset=\"UTF-8\" target=\"_blank\"&gt;\n  First Name: &lt;input type=\"text\" name=\"fname\"&gt;\n  Last Name: &lt;input type=\"text\" name=\"lname\"&gt;\n  E-Mail: &lt;input type=\"text\" name=\"email\"&gt;\n  &lt;button type=\"submit\" value=\"submit\"&gt;Submit&lt;/button&gt;\n&lt;/form&gt;",
       "result":"<form name=\"testForm\" method=\"GET\" enctype=\"text/plain\" autocomplete=\"on\" action=\"process.jsp\" accept-charset=\"UTF-8\" target=\"_blank\">  First Name: <input type=\"text\" name=\"fname\"><br>  Last Name: <input type=\"text\" name=\"lname\"><br>  E-Mail: <input type=\"text\" name=\"email\"><br>  <button type=\"submit\" value=\"submit\">Submit</button></form>"
     },
-   "h1>, <h2>, <h3>, <h4>, <h5>, <h6":{  
+   "h1, h2, h3, h4, h5, h6":{  
       "category":"Text Tags",
       "description":"Headings of varying sizes, h1 (largest) to h6 (smallest).",
       "example":"",
