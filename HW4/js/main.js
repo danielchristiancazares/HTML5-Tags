@@ -47,27 +47,40 @@ else {
 			var query = searchBox.val();
 			if (query.length < 1)
 				return;
-			resultBox.find('a:not(.list-group-item-info)').remove();
 			clearTimeout(searchTimeout);
-			
+
 			var doSearch = function () {
 				if (!su.ready) {
 					searchTimeout = setTimeout(doSearch, 250);
 					return;
 				}
-				var results = su.search(searchBox.val());
+				resultBox.find('a:not(.list-group-item-info)').remove();
+				var results = su.search(searchBox.val()),
+					first = true;
 				// show list
 				for (var result in results) {
 					var data = results[result],
 						link = $('<a class="list-group-item"></a>').appendTo(resultBox).text(data).attr('href', 'tag.html?id=' + data);
+					if (first) {
+						first = false;
+						link.addClass('active');
+					}
 				}
 				resultBox.show();
 				if (!results.length) {
 					$('<a class="list-group-item list-group-item-warning">No results found!</a>').appendTo(resultBox);
 				}
 			}
-			
+
 			searchTimeout = setTimeout(doSearch, 250);
+		}).keypress(function (event) {
+			// enter key was pressed 
+			if (event.which == 13) {
+				var active = resultBox.find('a.active'),
+					link = active.attr('href');
+				window.location.replace(link);
+				return false;
+			}
 		});
 	});
 }
