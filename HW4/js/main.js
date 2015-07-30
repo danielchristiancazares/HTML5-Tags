@@ -31,6 +31,20 @@ else {
 			return results;
 		}
 	};
+	
+      /*
+       * getParams() - Retrieves the GET parameter 'id' used in searching the Firebase database.
+       * 
+       * No parameters.
+       *
+       */
+      function getParams() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          vars[key] = value;
+        });
+        return vars;
+      }
 
 	$(document).ready(function () {
 		var searchTimeout,
@@ -78,7 +92,7 @@ else {
 			if (event.which == 13) {
 				var active = resultBox.find('a.active'),
 					link = active.attr('href');
-				window.location.replace(link);
+				window.location.href = link;
 				return false;
 			}
 		});
