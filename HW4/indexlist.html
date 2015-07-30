@@ -27,7 +27,7 @@
                 var tagName = tagChild.key();
                 var tagDescData = tagChild.child("description");
                 var tagDesc = tagDescData.val();
-                $("#tagList").append("<tr><td><a href=\"#\">"+tagName+"</a></td><td>"+tagDesc+"</td> </tr>");
+                $("#tagList").append("<tr><td><a href=\"tag.html?id="+tagName+"\">"+tagName+"</a></td><td>" + tagDesc + "</td> </tr>");
             })
         });
     </script>
