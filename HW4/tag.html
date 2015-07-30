@@ -42,7 +42,7 @@
       var htmlForPath = {};
         
       // Search the database for the rest of the page's information.
-      tagSearch.child("tags/<"+first+">").on("value", function(snapshot) {
+      tagSearch.child("tags/"+first).on("value", function(snapshot) {
         category = snapshot.child("category").val();
         description = snapshot.child("description").val();
         example = snapshot.child("example").val();
