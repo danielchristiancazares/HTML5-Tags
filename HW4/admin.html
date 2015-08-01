@@ -148,7 +148,8 @@
 									category: categoryInput.val(),
 									description: descriptionInput.val(),
 									example: exampleInput.val(),
-									result: resultInput.val()
+									result: resultInput.val(),
+									attributes: attributesInput.val()
 								}, onComplete);
 								
 							});
@@ -170,7 +171,7 @@
 						btnGroup.hide();
 						var firebase = new Firebase('https://boiling-heat-3594.firebaseio.com/tags'),
 							newRecord = {};
-							
+							debugger
 						newRecord[nameInput.val()] = {
 							category: categoryInput.val(),
 							description: descriptionInput.val(),
