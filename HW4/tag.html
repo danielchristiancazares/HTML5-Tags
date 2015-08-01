@@ -49,6 +49,7 @@
         description = snapshot.child("description").val();
         example = snapshot.child("example").val();
         result = snapshot.child("result").val();
+        attributes = snapshot.child("attributes").val();
         
         document.getElementById("tagName").innerHTML = "&lt;" + first + "&gt; Element";
         document.title = "<" + first + "> Element";
@@ -56,6 +57,7 @@
         document.getElementById("description").innerHTML = description;
         document.getElementById("example").innerHTML = example;
         document.getElementById("result").innerHTML = result;
+        document.getElementById("attributes").innerHTML = attributes;
         });
 </script>
 </head>
@@ -104,45 +106,11 @@
         </section>
 
         <!--Tag-Specific Attirbutes-->
-        <section id="tag-specific attributes">
-            <p><u>There are no attributes specific towards this tag.</u></p>
-        </section>
+        <div id="attributes">
+        </div>
 
-        <!--Compatibility-->
-		<section class="panel panel-default">
-			<div class="panel-heading">Compatibility</div>
-			<table class="table">
-				<tr>
-					<th>Browser</th>
-					<th>Support</th>
-				</tr>
-				<tr>
-					<td>Chrome</td>
-					<td>Yes</td>
-				</tr>
-				<tr>
-					<td>Firefox</td>
-					<td>Yes</td>
-				</tr>
-				<tr>
-					<td>Internet Explorer</td>
-					<td>Yes</td>
-				</tr>
-				<tr>
-					<td>Opera</td>
-					<td>Yes</td>
-				</tr>
-			</table>
-		</section>
-		
-		<!--See Also-->
-		<section>
-			<h2>See Also</h2>
-			<ul>
-				<li><a href="li.html">&lt;li&gt;</a></li>
-			    <li><a href="ol.html">&lt;ol&gt;</a></li>
-		    </ul>
-	</section>
+        <!--See Also, if time permits-->
+
 	</div>
 	<div class="jumbotron">
 		<!--Footer-->
