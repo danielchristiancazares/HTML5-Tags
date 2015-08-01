@@ -17,6 +17,7 @@
      	}
       
       	var thisCategory = getParam()["id"].replace(/_/g," ");
+		thisCategory = thisCategory.replace(/And/g,"&");
       	
 	</script>
 	<style>
@@ -38,15 +39,16 @@
             // For each tag
 			snapshot.forEach(function(tagChild) {
 				// Check to see if in this category
-        var categoryName = tagChild.child("category").val();
+        		var categoryName = tagChild.child("category").val();
 				if (categoryName == thisCategory) {
 					// category matches, dump it to table
-	        var categoryDesc = tagChild.child("description").val();
-          $("#categoryList").append("<tr><td><a href=\"tag.html?id="+snapshot.key()+"\">"+categoryName+"</a></td><td>" + categoryDesc + "</td> </tr>");
+	        		var categoryDesc = tagChild.child("description").val();
+          			$("#categoryList").append("<tr><td><a href=\"tag.html?id="+tagChild.key()+"\">"+ tagChild.key()  +"</a></td><td>" + categoryDesc + "</td> </tr>");
 				}
 			})
+
 			document.title =  thisCategory;
-			$("category-title").append(thisCategory);
+			$("#categoryTitle").append(thisCategory);
         });
     </script>
 
@@ -65,7 +67,7 @@
 
 
 	<div class="jumbotron" style="margin-top:50px">
-		<h1 style="text-align:center;" id="category-title"></h1>
+		<h1 style="text-align:center;" id="categoryTitle"></h1>
 	</div>
 
 <div class="container">
