@@ -157,9 +157,11 @@
 								btnGroup.hide();
 								if (!confirm("This is untested. Continue?"))
 									return;
-								firebase.remove(onComplete);
+								firebase.remove(function () {
+									window.location.href = "admin.html";
+								});
 								
-							}, onComplete);
+							});
 						}
 			    	});
 				}
