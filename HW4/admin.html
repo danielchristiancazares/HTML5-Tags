@@ -38,6 +38,7 @@
 			<div class="container">
 				<h1>Administration</h1>
 				<p>Use the following controls to modify the tags in the database.</p>
+				<p>To edit or delete an item, enter "?id=" and the name of the item in the URL.</p>
 			</div>
 		</div>
 		<section class="container">
@@ -56,6 +57,9 @@
 				</div>
 				<div class="form-group">
 					<textarea class="form-control" type="text" name="Result" placeholder="Result" id="result" rows="5"></textarea>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" type="text" name="Attributes" placeholder="Attributes" id="attributes" rows="5"></textarea>
 				</div>
 				<div class="btn-group">
 					<input class="btn btn-success" type="button" id="createBtn" name="createBtn" value="Create">
@@ -78,6 +82,7 @@
 					descriptionInput =$('#description'),
 					exampleInput = $('#example'),
 					resultInput = $('#result'),
+					attributesInput = $('#attributes'),
 					statusDiv = $('.alert'),
 					btnGroup = $('.btn-group');
 					
@@ -117,13 +122,15 @@
 								var category = data.category,
 									description = data.description,
 									example = data.example,
-									result = data.result;
+									result = data.result,
+									attributes = data.attributes;
 									
 								nameInput.val(tagName);
 								categoryInput.val(category);
 								descriptionInput.val(description);
 								exampleInput.val(example);
 								resultInput.val(result);
+								attributesInput.val(attributes);
 								return false;
 							}
 						});
@@ -168,7 +175,8 @@
 							category: categoryInput.val(),
 							description: descriptionInput.val(),
 							example: exampleInput.val(),
-							result: resultInput.val()
+							result: resultInput.val(),
+							attributes: attributesInput.val()
 						}
 					
 			    		firebase.update(newRecord, onComplete);
