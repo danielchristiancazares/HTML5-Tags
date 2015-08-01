@@ -57,7 +57,7 @@
         document.getElementById("description").innerHTML = description;
         document.getElementById("example").innerHTML = example;
         document.getElementById("result").innerHTML = result;
-        document.getElementById("attributes").innerHTML = attributes;
+        document.getElementById("attributes").innerHTML = "<thead><th>Attributes</th></thead>" +  attributes;
         });
 </script>
 </head>
@@ -106,8 +106,8 @@
         </section>
 
         <!--Tag-Specific Attirbutes-->
-        <div id="attributes">
-        </div>
+        <table id="attributes" class="table">
+        </table>
 
         <!--See Also, if time permits-->
 
