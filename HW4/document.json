@@ -13,728 +13,728 @@
   },
   "tags" : {
     "a" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Link Tags",
       "description" : "Defines a hyperlink that will take the user to a new page.",
       "example" : "&lt;a href=\"http://google.com\"&gt;Link Text&lt;/a&gt;",
       "result" : "<a href=\"http://google.com\">Link Text</a>"
     },
     "abbr" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines an abbreviation. Used to give information to browsers and search engines.",
       "example" : "&lt;abbr title=\"laughing out loud\"&gt;LOL&lt;/abbr&gt;",
       "result" : "<abbr title=\"laughing out loud\">LOL</abbr>"
     },
     "address" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies author's contact address (electronic or mailing).",
       "example" : "&lt;address&gt;\nFor more details, contact &lt;a href=\"mailto:john@doe.com\"&gt;John Doe&lt;/a&gt;\n&lt;/address&gt;",
       "result" : "<address>For more details, contact <a href=\"mailto:fakeusername@fakeserver.com\">John Doe</a></address>"
     },
     "area" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Defines a specific area inside an image-map. Must be inside a <map> tag.",
       "example" : "&lt;p>Click the Top or Bottom of this image-map!&lt;/p>\n\n&lt;img src=\"assets/areaTopBottom.jpg\" alt=\"topBottom\" usemap=\"#basicMap\">\n\n&lt;map name=\"basicMap\">\n&lt;area shape=\"rect\" alt=\"top\" coords=\"0,0,200,100\" href=\"assets/top.jpg\">\n&lt;area shape=\"rect\" alt=\"bottom\" coords=\"100,0,200,200\" href=\"assets/bottom.jpg\">\n&lt;/map>",
       "result" : "<p>Click the Top or Bottom of this image-map!</p>\n\n<img src=\"assets/areaTopBottom.jpg\" alt=\"topBottom\" usemap=\"#basicMap\">\n\n<map name=\"basicMap\">\n<area shape=\"rect\" alt=\"top\" coords=\"0,0,200,100\" href=\"assets/top.jpg\">\n<area shape=\"rect\" alt=\"bottom\" coords=\"100,0,200,200\" href=\"assets/bottom.jpg\">\n</map>"
     },
     "article" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines an article in the document.",
       "example" : "&lt;article&gt;\n  &lt;h1&gt;This is the heading of the article&lt;/h1&gt;\n  Here is some additional content underneath the header.\n&lt;/article&gt;\n&lt;hr&gt;\n&lt;article&gt;\n  &lt;h1&gt;This is the second article&lt;/h1&gt;\n  The content of the second article is this sentence.\n&lt;/article&gt;",
       "result" : "<article> \t<h1>This is the heading of the article</h1> \tHere is some additional content underneath the header. </article> <hr> <article> \t<h1>This is the second article</h1> \tThe content of the second article is this sentence. </article>"
     },
     "asdf" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "asdf",
       "description" : "asfd",
       "example" : "sadf",
       "result" : "asfd"
     },
     "aside" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines content aside from the page content.",
       "example" : "&lt;p&gt;Here is some sample text in a paragraph tag.\n&lt;aside&gt;This is some text inside an aside tag.&lt;/aside&gt;\n&lt;p&gt;Here is another paragraph after the aside.",
       "result" : "<p>Here is some sample text in a paragraph tag. <aside>This is some text inside an aside tag.</aside> <p>Here is another paragraph after the aside."
     },
     "audio" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Defines sound content.",
       "example" : "&lt;p&gt;This audio has the controls, meaning it can be controlled. This is Battle is to the Strong by Yuki Kajiura.&lt;/p&gt;\n&lt;audio controls&gt;&lt;source src=\"assets/the_battle_is_to_the_strong.mp3\" /&gt; Your browser does not support the audio element.&lt;/audio&gt;\n&lt;br /&gt;\n&lt;p&gt;This audio has been muted with the muted attribute by default. Same music file, also has preload attribute which determines whether the element is preloaded, in this case preload is set to \"none\".&lt;/p&gt;\n&lt;audio controls muted preload=\"none\"&gt; &lt;source src=\"the_battle_is_to_the_strong.mp3\" /&gt; &lt;/audio&gt;\n&lt;p&gt;The looping audio has a loop applied. This is To Be Continued by Yuki Kajiura. &lt;/p&gt;&lt;audio controls loop&gt; &lt;source src=\"assets/to_be_continued.mp3\" /&gt; Your browser does not support the audio element&lt;/audio&gt;",
       "result" : ""
     },
     "b" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines bold text.",
       "example" : "&lt;b&gt;This bolded text&lt;/b&gt; is wrapped in the b tag.",
       "result" : "<b>This bolded text</b> is wrapped in the b tag."
     },
     "base" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Link Tags",
       "description" : "Defines the base URL for all relative URLs in a page.",
       "example" : "&lt;base href=\"http://yahoo.com\"/&gt;\n&lt;p&gt;The base element specifies a base URL to use for all relative URLs in a document.\n&lt;p&gt;For example, this link will link directly to a specific page.&lt;/p&gt;\n&lt;a href=\"https://www.google.com/search?q=base\"&gt;https://www.google.com/search?q=base&lt;/a&gt;\n&lt;br&gt;\n&lt;p&gt;However, this link is only a relative URL. The base is set to a different website, which will redirect to a different host.&lt;/p&gt;\n&lt;a href=\"/search?q=base\"&gt;/search?q=base&lt;/a&gt;",
       "result" : "<base href=\"http://yahoo.com\"/><p>The base element specifies a base URL to use for all relative URLs in a document.<p>For example, this link will link directly to a specific page.</p><a href=\"https://www.google.com/search?q=base\">https://www.google.com/search?q=base</a><br /><p>However, this link is only a relative URL. The base is set to a different website, which will redirect to a different host.</p><a href=\"/search?q=base\">/search?q=base</a>"
     },
     "bdi" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a part of text that might be formatted in a different direction from the other text.",
       "example" : "&lt;bdi&gt;إذ الدمج يتعلّق به،, فعل الذود إعمار غرّة، أي. حين عن فبعد حكومة إنطلاق, أم تحرّك مشاركة الإتفاقية مكن, النزاع تزامناً الثقيلة ٣٠ بعد. هذه عن القادة الأولية الفرنسية, ٣٠ مما ومضى لغات, عرفها الدّفاع أم به،. بال عن كانتا اقتصادية.&lt;/bdi&gt;",
       "result" : "<bdi>إذ الدمج يتعلّق به،, فعل الذود إعمار غرّة، أي. حين عن فبعد حكومة إنطلاق, أم تحرّك مشاركة الإتفاقية مكن, النزاع تزامناً الثقيلة ٣٠ بعد. هذه عن القادة الأولية الفرنسية, ٣٠ مما ومضى لغات, عرفها الدّفاع أم به،. بال عن كانتا اقتصادية.</bdi>"
     },
     "bdo" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines right-to-left or left-to-right text direction.",
       "example" : "&lt;p&gt;&lt;bdo dir=\"rtl\"&gt; RIGHT to LEFT&lt;/bdo&gt;&lt;/p&gt;\n&lt;p&gt;&lt;bdo dir=\"ltr\"&gt; LEFT to RIGHT&lt;/bdo&gt;&lt;/p&gt;",
       "result" : "<p><bdo dir=\"rtl\"> RIGHT to LEFT</bdo></p><p><bdo dir=\"ltr\"> LEFT to RIGHT</bdo></p>"
     },
     "blockquote" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies a section of text quoted from another source.",
       "example" : "&lt;blockquote cite=\"http://en.wikipedia.org/wiki/Main_Page\"&gt;\n  Welcome to Wikipedia, the free encyclopedia that anyone can edit.\n&lt;/blockquote&gt;",
       "result" : "<blockquote cite=\"http://en.wikipedia.org/wiki/Main_Page\">Welcome to Wikipedia, the free encyclopedia that anyone can edit.</blockquote>"
     },
     "body" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Defines the document's body.",
       "example" : "&lt;body&gt;\n    &lt;p&gt;The body is where you place various elements. Note that all tag-specific attributes for this tag has been made obsolete.&lt;/p&gt;\n&lt;/body&gt;",
       "result" : "<body>\n    <p>The body is where you place various elements. Note that all tag-specific attributes for this tag has been made obsolete.</p>\n</body>"
     },
     "br" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a line break.",
       "example" : "Before the line break.&lt;br /&gt; After the line break.",
       "result" : "Before the line break.<br />After the line break."
     },
     "button" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Defines a clickable button.",
       "example" : "&lt;button type=\"button\" onclick=\"alert('Youve clicked the button.')\"&gt;Button&lt;/button&gt;",
       "result" : "<button type=\"button\">Button</button>"
     },
     "canvas" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Creates a space on which scripts can draw objects.",
       "example" : "&lt;canvas id=\"boxCanvas\"&gt;This blue box does not show if the browers does not support the canvas tag.&lt;/canvas&gt;\n&lt;script&gt;\n  var c = document.getElementById(\"boxCanvas\");\n  var ctx = c.getContext(\"2d\");\n  ctx.fillStyle = \"#0000FF\";\n  ctx.fillRect(0, 0, 150, 150);\n&lt;/script&gt;",
       "result" : "<canvas id=\"boxCanvas\">This blue box does not show if the browers does not support the canvas tag.</canvas>\n<script>\n  var c = document.getElementById(\"boxCanvas\");\n  var ctx = c.getContext(\"2d\");\n  ctx.fillStyle = \"#0000FF\";\n  ctx.fillRect(0, 0, 150, 150);\n</script>"
     },
     "caption" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Defines a table's caption.",
-      "example" : "&lt;p&gt;The caption element is used within a table element to provide context.&lt;/p&gt;\n&lt;table style=\"border: 1px solid black;\"&gt;\n  &lt;caption&gt;\n  &lt;p&gt;This is a table.&lt;/p&gt;\n  &lt;/caption&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Column 1&lt;/th&gt;\n      &lt;th&gt;Column 2&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tfoot&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Footer 1&lt;/td&gt;\n      &lt;td&gt;Footer 2&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tfoot&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Cell 1&lt;/td&gt;\n      &lt;td&gt;Cell 2&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;",
+      "example" : "&lt;p&gt;The caption element is used within a table element to provide context.&lt;/p&gt;\n&lt;table style=\"border: 1px solid black;\"&gt;\n  &lt;caption&gt;\n  &lt;p&gt;This is a table.&lt;/p&gt;\n  &lt;/caption&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Column 1&lt;/th&gt;      &lt;th&gt;Column 2&lt;/th&gt;    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tfoot&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Footer 1&lt;/td&gt;      &lt;td&gt;Footer 2&lt;/td&gt;    &lt;/tr&gt;\n  &lt;/tfoot&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Cell 1&lt;/td&gt;      &lt;td&gt;Cell 2&lt;/td&gt;    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;",
       "result" : "<p>The caption element is used within a table element to provide context.</p>\n<table style=\"border: 1px solid black;\">\n  <caption>\n  <p>This is a table.</p>\n  </caption>\n  <thead>\n    <tr>\n      <th>Column 1</th>\n      <th>Column 2</th>\n    </tr>\n  </thead>\n  <tfoot>\n    <tr>\n      <td>Footer 1</td>\n      <td>Footer 2</td>\n    </tr>\n  </tfoot>\n  <tbody>\n    <tr>\n      <td>Cell 1</td>\n      <td>Cell 2</td>\n    </tr>\n  </tbody>\n</table>"
     },
     "cite" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Declares the title of an external piece of work.",
       "example" : "&lt;cite&gt;This text has been affected by the cite tag.&lt;/cite&gt;",
       "result" : "<cite>This text has been affected by the cite tag.</cite>"
     },
     "code" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a piece of computer code.",
       "example" : "&lt;code&gt;This is an example of the code tag in use. It is used to denote computer code.&lt;/code&gt;",
       "result" : "<code>This is an example of the code tag in use. It is used to denote computer code.</code>"
     },
     "col" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Specifies properties for columns.",
-      "example" : "&lt;table&gt;\n  &lt;colgroup>\n    &lt;col style=\"background-color: blue;\">\n    &lt;col span=\"2\" style=\"background-color: red;\">\n  &lt;/colgroup>\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Column 1&lt;/th&gt;\n      &lt;th&gt;Column 2&lt;/th&gt;\n      &lt;th&gt;Column 3&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Cell 1&lt;/td&gt;\n      &lt;td&gt;Cell 2&lt;/td&gt;\n      &lt;td&gt;Cell 3&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;tfoot&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Footer 1&lt;/td&gt;\n      &lt;td&gt;Footer 2&lt;/td&gt;\n      &lt;td&gt;Footer 3&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tfoot&gt;\n&lt;/table&gt;",
+      "example" : "&lt;table&gt;\n  &lt;colgroup>\n    &lt;col style=\"background-color: blue;\">\n    &lt;col span=\"2\" style=\"background-color: red;\">\n  &lt;/colgroup>\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Column 1&lt;/th&gt;      &lt;th&gt;Column 2&lt;/th&gt;      &lt;th&gt;Column 3&lt;/th&gt;    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Cell 1&lt;/td&gt;      &lt;td&gt;Cell 2&lt;/td&gt;      &lt;td&gt;Cell 3&lt;/td&gt;    &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;tfoot&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Footer 1&lt;/td&gt;      &lt;td&gt;Footer 2&lt;/td&gt;      &lt;td&gt;Footer 3&lt;/td&gt;    &lt;/tr&gt;\n  &lt;/tfoot&gt;\n&lt;/table&gt;",
       "result" : "<table><colgroup><col style=\"background-color: blue;\"><col span=\"2\" style=\"background-color: red;\"></colgroup><thead><tr><th>Column 1</th><th>Column 2</th><th>Column 2</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td><td>Cell 2</td></tr></tbody><tfoot><tr><td>Footer 1</td><td>Footer 2</td><td>Footer 2</td></tr></tfoot></table>"
     },
     "colgroup" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Specifies a group of columns in a table.",
-      "example" : "&lt;table&gt;\n  &lt;colgroup span=\"3\" style=\"background-color: blue;\"&gt;&lt;/colgroup&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Column 1&lt;/th&gt;\n      &lt;th&gt;Column 2&lt;/th&gt;\n      &lt;th&gt;Column 3&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Cell 1&lt;/td&gt;\n      &lt;td&gt;Cell 2&lt;/td&gt;\n      &lt;td&gt;Cell 3&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;tfoot&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Footer 1&lt;/td&gt;\n      &lt;td&gt;Footer 2&lt;/td&gt;\n      &lt;td&gt;Footer 3&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tfoot&gt;\n&lt;/table&gt;",
+      "example" : "&lt;table&gt;\n  &lt;colgroup span=\"3\" style=\"background-color: blue;\"&gt;&lt;/colgroup&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Column 1&lt;/th&gt;      &lt;th&gt;Column 2&lt;/th&gt;      &lt;th&gt;Column 3&lt;/th&gt;    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Cell 1&lt;/td&gt;      &lt;td&gt;Cell 2&lt;/td&gt;      &lt;td&gt;Cell 3&lt;/td&gt;    &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;tfoot&gt;\n    &lt;tr&gt;\n      &lt;td&gt;Footer 1&lt;/td&gt;      &lt;td&gt;Footer 2&lt;/td&gt;      &lt;td&gt;Footer 3&lt;/td&gt;    &lt;/tr&gt;\n  &lt;/tfoot&gt;\n&lt;/table&gt;",
       "result" : "<table><colgroup span=\"3\" style=\"background-color: blue;\"></colgroup><thead><tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td></tr></tbody><tfoot><tr><td>Footer 1</td><td>Footer 2</td><td>Footer 3</td></tr></tfoot></table>"
     },
     "data" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Allows for machine-readable data to be provided.",
       "example" : "&lt;p&gt;Laptop\n&lt;data class=\"objectCost\" value=\"900USD\"&gt; $900 &lt;/data&gt;\n&lt;/p&gt;",
       "result" : "<p>Laptop<data class=\"objectCost\" value=\"900USD\"> $900 </data></p>"
     },
     "datalist" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "List Tags",
       "description" : "Specifies an autocomplete dropdown list.",
       "example" : "&lt;p&gt;Select your favorite color from the list below:&lt;/p&gt;\n&lt;form method=\"get\"&gt;\n &lt;input list=\"Colors\"&gt;\n &lt;datalist id=\"Colors\"&gt;\n &lt;option value=\"Red\" label=\"redOption\"&gt;\n &lt;option value=\"Orange\" label=\"orangeOption\"&gt;\n &lt;option value=\"Yellow\" label=\"yellowOption\"&gt;\n &lt;option value=\"Green\" label=\"greenOption\"&gt;\n &lt;option value=\"Blue\" label=\"blueOption\"&gt;\n &lt;option value=\"Purple\" label=\"purpleOption\"&gt;\n &lt;option value=\"Black\" label=\"blackOption\"&gt;\n &lt;/datalist&gt;\n &lt;input type=\"submit\"&gt;\n&lt;/form&gt;",
       "result" : "<p>Select your favorite color from the list below:</p><form method=\"get\"><input list=\"Colors\"><datalist id=\"Colors\"><option value=\"Red\" label=\"redOption\"><option value=\"Orange\" label=\"orangeOption\"><option value=\"Yellow\" label=\"yellowOption\"><option value=\"Green\" label=\"greenOption\"><option value=\"Blue\" label=\"blueOption\"><option value=\"Purple\" label=\"purpleOption\"><option value=\"Black\" label=\"blackOption\"></datalist><input type=\"submit\"></form>"
     },
     "dd" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "List Tags",
       "description" : "Defines a description of a term in a description list.",
       "example" : "&lt;p&gt;The dd tag encloses the definition in a DL list.&lt;/p&gt;\n&lt;dl&gt;\n  &lt;dt&gt;Word&lt;/dt&gt;\n  &lt;dd&gt;Definition&lt;/dd&gt;\n&lt;/dl&gt;",
       "result" : "<p>The dd tag encloses the definition in a DL list.</p><dl><dt>Word</dt><dd>Definition</dd></dl>"
     },
     "del" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines text that has been deleted from a document.",
       "example" : "&lt;del datetime=\"2015-07-14\" cite=\"delcite.html\"&gt;Deleted text&lt;/del&gt;",
       "result" : "<del datetime=\"2015-07-14\" cite=\"delcite.html\">Deleted text</del>"
     },
     "details" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Specifies details of an element.",
-      "example" : "&lt;details&gt; \n        &lt;summary&gt; This is an example of a details element, click it to reveal hidden message. &lt;/summary&gt;\n        &lt;p&gt; - Hidden Message, much creative such secretive. &lt;/p&gt;\n        &lt;p&gt;Much secrets can be hidden here.&lt;/p&gt;\n    &lt;/details&gt;\n    &lt;details open&gt; \n        &lt;summary&gt; This is an example of details element that is open by default with the open attribute &lt;/summary&gt;\n        &lt;p&gt;Hidden message of secrecy.&lt;/p&gt;\n    &lt;/details&gt;\n",
+      "example" : "&lt;details&gt;\n         &lt;summary&gt; This is an example of a details element, click it to reveal hidden message. &lt;/summary&gt;\n        &lt;p&gt; - Hidden Message, much creative such secretive. &lt;/p&gt;\n        &lt;p&gt;Much secrets can be hidden here.&lt;/p&gt;\n    &lt;/details&gt;\n    &lt;details open&gt;\n         &lt;summary&gt; This is an example of details element that is open by default with the open attribute &lt;/summary&gt;\n        &lt;p&gt;Hidden message of secrecy.&lt;/p&gt;\n    &lt;/details&gt;\n",
       "result" : "<details><summary> This is an example of a details element, click it to reveal hidden message. </summary><p> - Hidden Message, much creative such secretive. </p><p>Much secrets can be hidden here.</p></details><details open><summary> This is an example of details element that is open by default with the open attribute </summary><p>Hidden message of secrecy.</p></details>"
     },
     "dfn" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies the defining instance of a term.",
       "example" : "The DFN tag marks the the first instance of an &lt;dfn title=\"Definition of element\"&gt;element&lt;/dfn&gt;, and points to a definition.",
       "result" : "The DFN tag marks the the first instance of an <dfn title=\"Definition of element\">element</dfn>, and points to a definition."
     },
     "dialog" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Specifies that part of an application is interactive.",
       "example" : "&lt;dialog open&gt;&lt;p&gt;This is an example of a dialog element.&lt;/p&gt;&lt;/dialog&gt;",
       "result" : "<dialog open><p>This is an example of a dialog element.</p></dialog>"
     },
     "div" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Defines a division or section within a doc. Usually for CSS.",
       "example" : "&lt;div style=\"background-color:yellow;\"&gt;  &lt;p&gt;This section has a yellow background color.&lt;/p&gt;&lt;/div&gt;",
       "result" : "<div style=\"background-color:yellow;\">\n  <p>This section has a yellow background color.</p>\n</div>"
     },
     "dl" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "List Tags",
       "description" : "Defines a description list.",
       "example" : "&lt;p&gt;The dl tag encloses a list of pairs of terms and descriptions.&lt;/p&gt;\n&lt;dl&gt;\n  &lt;dt&gt;Word&lt;/dt&gt;\n  &lt;dd&gt;Definition&lt;/dd&gt;\n&lt;/dl&gt;",
       "result" : "<p>The dl tag encloses a list of pairs of terms and descriptions.</p><dl><dt>Word</dt><dd>Definition</dd></dl>"
     },
     "dt" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "List Tags",
       "description" : "Defines a term in a description list.",
       "example" : "&lt;p&gt;The dt tag encloses the term in a DL list.&lt;/p&gt;\n&lt;dl&gt;\n  &lt;dt&gt;Word&lt;/dt&gt;\n  &lt;dd&gt;Definition&lt;/dd&gt;\n&lt;/dl&gt;",
       "result" : "<p>The dt tag encloses the term in a DL list.</p><dl><dt>Word</dt><dd>Definition</dd></dl>"
     },
     "em" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines emphasized text.",
       "example" : "&lt;em&gt;This is an example of emphasized text using the em tag.&lt;/em&gt;",
       "result" : "<em>This is an example of emphasized text using the em tag.</em>"
     },
     "embed" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Specifies external application or interactive content.",
       "example" : "&lt;embed src=\"assets/embedflashexample.swf\" height=\"50\"&gt;",
       "result" : "<embed src=\"assets/embedflashexample.swf\" height=\"50\">"
     },
     "fieldset" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Defines a group of related elements in a form.",
       "example" : "&lt;fieldset name=\"fieldset\"&gt;\n  &lt;legend&gt;Fieldset&lt;/legend&gt;\n  &lt;select name=\"select\"&gt;\n    &lt;option value=\"value1\">Option 1&lt;/option&gt;\n    &lt;option value=\"value2\">Option 2&lt;/option&gt;\n&lt;/select&gt;\n&lt;/fieldset&gt;",
       "result" : "<fieldset name=\"fieldset\"><legend>Fieldset</legend><select name=\"select\"><option value=\"value1\">Option 1</option><option value=\"value2\">Option 2</option></select></fieldset>"
     },
     "figcaption" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Specifies caption for the figure element.",
       "example" : "&lt;figure&gt;\n  &lt;figcaption&gt;Look at this cute puppy! This caption appears above the figure&lt;/figcaption&gt;\n  &lt;img src=\"figurepuppy.jpg\" alt=\"This is a cute Puppy!\" height=\"260\" width=\"345\"&gt;\n&lt;/figure&gt;",
       "result" : "<figure><figcaption>Look at this cute puppy! This caption appears above the figure</figcaption><img src=\"figurepuppy.jpg\" alt=\"This is a cute Puppy!\" height=\"260\" width=\"345\"></figure>"
     },
     "figure" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Specifies a group of media content, and their caption.",
       "example" : "&lt;figure&gt;\n  &lt;figcaption&gt;Look at this cute puppy! This caption appears above the figure&lt;/figcaption&gt;\n  &lt;img src=\"figurepuppy.jpg\" alt=\"This is a cute Puppy!\" height=\"260\" width=\"345\"&gt;\n&lt;/figure&gt;",
       "result" : "<figure><figcaption>Look at this cute puppy! This caption appears above the figure</figcaption><img src=\"figurepuppy.jpg\" alt=\"This is a cute Puppy!\" height=\"260\" width=\"345\"></figure>"
     },
     "footer" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Specifies a footer for a section or page.",
       "example" : "&lt;footer&gt;\n  This is the footer of the document.\n  &lt;p&gt;The author of this article is &lt;b&gt;Dennis Bykkov&lt;/b&gt;\n  &lt;p&gt;Additional links to other content should be placed here.\n&lt;/footer&gt;",
       "result" : "<footer>  This is the footer of the document.  <p>The author of this article is <b>Dennis Bykkov</b>  <p>Additional links to other content should be placed here.</footer>"
     },
     "form" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Defines a form for user input.",
       "example" : "&lt;form name=\"testForm\" method=\"GET\" enctype=\"text/plain\" autocomplete=\"on\" action=\"process.jsp\" accept-charset=\"UTF-8\" target=\"_blank\"&gt;\n  First Name: &lt;input type=\"text\" name=\"fname\"&gt;\n  Last Name: &lt;input type=\"text\" name=\"lname\"&gt;\n  E-Mail: &lt;input type=\"text\" name=\"email\"&gt;\n  &lt;button type=\"submit\" value=\"submit\"&gt;Submit&lt;/button&gt;\n&lt;/form&gt;",
       "result" : "<form name=\"testForm\" method=\"GET\" enctype=\"text/plain\" autocomplete=\"on\" action=\"process.jsp\" accept-charset=\"UTF-8\" target=\"_blank\">  First Name: <input type=\"text\" name=\"fname\"><br>  Last Name: <input type=\"text\" name=\"lname\"><br>  E-Mail: <input type=\"text\" name=\"email\"><br>  <button type=\"submit\" value=\"submit\">Submit</button></form>"
     },
     "h1, h2, h3, h4, h5, h6" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Headings of varying sizes, h1 (largest) to h6 (smallest).",
       "example" : "",
       "result" : ""
     },
     "head" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Defines information about the document.",
       "example" : "",
       "result" : ""
     },
     "header" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Specifies a group of introductory or navigational aids, including hgroup elements.",
       "example" : "",
       "result" : ""
     },
     "hgroup" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies a header for a section or page.",
       "example" : "",
       "result" : ""
     },
     "hr" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Inserts a line across the page, usually to indicate a change in content.",
       "example" : "Before the line.\n&lt;hr&gt;After the line.",
       "result" : "Before the line.<hr>After the line."
     },
     "html" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Defines the root of the HTML document.",
       "example" : "",
       "result" : ""
     },
     "i" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines text of a differtent voice or mood.",
       "example" : "&lt;Italicized text.&gt;",
       "result" : "<i>Italicized text.</i>"
     },
     "iframe" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Defines an inline frame.",
       "example" : "",
       "result" : ""
     },
     "img" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Defines an image.",
       "example" : "&lt;img src=\"assets/img.gif\" alt=\"Image\" width=\"100\" height=\"100\" usemap=\"#imgmap\" crossorigin=\"anonymous\"&gt;\n&lt;map name=\"imgmap\"&gt;\n  &lt;area shape=\"rect\" coords=\"0,0,50,50\" href=\"link1.html\" alt=\"Link 1\"&gt;\n  &lt;area shape=\"rect\" coords=\"50,0,100,50\" href=\"link2.html\" alt=\"Link 2\"&gt;\n  &lt;area shape=\"rect\" coords=\"0,50,50,100\" href=\"link3.html\" alt=\"Link 3\"&gt;\n  &lt;area shape=\"rect\" coords=\"50,50,100,100\" href=\"link4.html\" alt=\"Link 4\"&gt;\n&lt;/map&gt;",
       "result" : "<img src=\"assets/img.gif\" alt=\"Image\" width=\"100\" height=\"100\" usemap=\"#imgmap\" crossorigin=\"anonymous\"><map name=\"imgmap\"><area shape=\"rect\" coords=\"0,0,50,50\" href=\"link1.html\" alt=\"Link 1\"><area shape=\"rect\" coords=\"50,0,100,50\" href=\"link2.html\" alt=\"Link 2\"><area shape=\"rect\" coords=\"0,50,50,100\" href=\"link3.html\" alt=\"Link 3\"><area shape=\"rect\" coords=\"50,50,100,100\" href=\"link4.html\" alt=\"Link 4\"></map>"
     },
     "ins" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines inserted text.",
-      "example" : "&lt;ins datetime=\"2015-07-14\" cite=\"inscite.html\"&gt; \nInserted text&lt;/ins&gt;",
+      "example" : "&lt;ins datetime=\"2015-07-14\" cite=\"inscite.html\"&gt;\n Inserted text&lt;/ins&gt;",
       "result" : "<ins datetime=\"2015-07-14\" cite=\"inscite.html\">Inserted text</ins>"
     },
     "kbd" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Script Tags",
       "description" : "Defines keyboard input.",
       "example" : "",
       "result" : ""
     },
     "keygen" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Generates a key pair.",
       "example" : "",
       "result" : ""
     },
     "label" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Defines the label for an input element.",
       "example" : "",
       "result" : ""
     },
     "legend" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Caption for a fieldset.",
       "example" : "",
       "result" : ""
     },
     "li" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "List Tags",
       "description" : "Defines a term in a list.",
       "example" : "",
       "result" : ""
     },
     "link" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Link Tags",
       "description" : "Defines a link between this document and an external resource.",
       "example" : "",
       "result" : ""
     },
     "main" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Specifies the main content area of an HTML document.",
       "example" : "",
       "result" : ""
     },
     "map" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Defines an image-map.",
       "example" : "&lt;img src=\"assets/img.gif\" alt=\"Image\" width=\"100\" height=\"100\" usemap=\"#imgmap\" crossorigin=\"anonymous\"&gt;\n&lt;map name=\"imgmap\"&gt;\n  &lt;area shape=\"rect\" coords=\"0,0,50,50\" href=\"link1.html\" alt=\"Link 1\"&gt;\n  &lt;area shape=\"rect\" coords=\"50,0,100,50\" href=\"link2.html\" alt=\"Link 2\"&gt;\n  &lt;area shape=\"rect\" coords=\"0,50,50,100\" href=\"link3.html\" alt=\"Link 3\"&gt;\n  &lt;area shape=\"rect\" coords=\"50,50,100,100\" href=\"link4.html\" alt=\"Link 4\"&gt;\n&lt;/map&gt;",
       "result" : "<img src=\"assets/img.gif\" alt=\"Image\" width=\"100\" height=\"100\" usemap=\"#imgmap\" crossorigin=\"anonymous\"><map name=\"imgmap\"><area shape=\"rect\" coords=\"0,0,50,50\" href=\"link1.html\" alt=\"Link 1\"><area shape=\"rect\" coords=\"50,0,100,50\" href=\"link2.html\" alt=\"Link 2\"><area shape=\"rect\" coords=\"0,50,50,100\" href=\"link3.html\" alt=\"Link 3\"><area shape=\"rect\" coords=\"50,50,100,100\" href=\"link4.html\" alt=\"Link 4\"></map>"
     },
     "mark" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies marked text.",
       "example" : "",
       "result" : ""
     },
     "meta" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Metadata Tags",
       "description" : "Defines metadata for the document; not displayed.",
       "example" : "",
       "result" : ""
     },
     "meter" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Specifies measurement within a predefined range.",
       "example" : "",
       "result" : ""
     },
     "nav" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Specifies navigation links.",
       "example" : "",
       "result" : ""
     },
     "object" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Defines an embedded object.",
       "example" : "",
       "result" : ""
     },
     "ol" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "List Tags",
       "description" : "Defines an ordered list.",
       "example" : "",
       "result" : ""
     },
     "optgroup" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Defines options that can be grouped together in a drop-down list.",
       "example" : "",
       "result" : ""
     },
     "option" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Defines an option in a drop-down list.",
       "example" : "",
       "result" : ""
     },
     "output" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Defines the result of a calculation.",
       "example" : "",
       "result" : ""
     },
     "p" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a paragraph for text.",
       "example" : "",
       "result" : ""
     },
     "param" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Defines a parameter for an object.",
       "example" : "",
       "result" : ""
     },
     "pre" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines preformatted text.",
       "example" : "&lt;pre&gt;Text within a pre tag.&lt;pre&gt;",
       "result" : "<pre>Text within a pre tag.</pre>"
     },
     "progress" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Defines the progress of a task.",
       "example" : "",
       "result" : ""
     },
     "q" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a quotation.",
       "example" : "&lt;q&gt;The tag represents quoted text and the browser will add quotes by default.&lt;/q&gt;",
       "result" : "<q>The tag represents quoted text and the browser will add quotes by default.</q>"
     },
     "rb" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines the base of a ruby annotation.",
       "example" : "",
       "result" : ""
     },
     "rp" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies text to show for browsers that do not support ruby annotations.",
       "example" : "",
       "result" : ""
     },
     "rt" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines annotated ruby text.",
       "example" : "",
       "result" : ""
     },
     "rtc" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a text container for ruby annotations.",
       "example" : "",
       "result" : ""
     },
     "ruby" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a segment of text for ruby annotations.",
       "example" : "",
       "result" : ""
     },
     "s" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies strikethrough text.",
       "example" : "&lt;s&gt;This text has the strikethrough tag.&lt;s&gt;",
       "result" : "<s>This text has the strikethrough tag.</s>"
     },
     "samp" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a sample output from a program.",
       "example" : "",
       "result" : ""
     },
     "section" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Defines a section in a document.",
       "example" : "",
       "result" : ""
     },
     "select" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Form Tags",
       "description" : "Defines a drop-down list.",
       "example" : "",
       "result" : ""
     },
     "small" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies small text.",
       "example" : "&lt;small&gt;This text has the small tag.&lt;small&gt;",
       "result" : "<small>This text has the small tag.</small>"
     },
     "source" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Link Tags",
       "description" : "Defines resources for media elements.",
       "example" : "",
       "result" : ""
     },
     "span" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a section in a document.",
       "example" : "&lt;span&gt;This text has the span tag.&lt;span&gt;",
       "result" : "<span>This text has the span tag.</span>"
     },
     "strong" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines important text.",
       "example" : "&lt;strong&gt;This text has the strong tag.&lt;strong&gt;",
       "result" : "<strong>This text has the strong tag.</strong>"
     },
     "style" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Metadata Tags",
       "description" : "Defines style information, usually used for CSS.",
       "example" : "",
       "result" : ""
     },
     "sub" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies subscripted text.",
       "example" : "&lt;sub&gt;This text has the subscript tag.&lt;sub&gt;",
       "result" : "<sub>This text has the subscript tag.</sub>"
     },
     "summary" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a heading for a &lt;details&gt; element.",
       "example" : "",
       "result" : ""
     },
     "sup" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies superscripted text.",
       "example" : "&lt;sub&gt;This text has the superscript tag.&lt;sub&gt;",
       "result" : "<sub>This text has the superscript tag.</sub>"
     },
     "table" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Defines a table element.",
       "example" : "",
       "result" : ""
     },
     "tbody" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Specifies the body content of a table.",
-      "example" : "&lt;table style=\"border: 1px solid black;\"&gt; \n&lt;thead&gt; \n&lt;tr&gt; \n&lt;th&gt;Column 1&lt;/th&gt; \n&lt;th&gt;Column 2&lt;/th&gt; \n&lt;/tr&gt; \n&lt;/thead&gt; \n&lt;tbody&gt; \n&lt;tr&gt; \n&lt;td&gt;td cell 1, child of tbody element&lt;/td&gt; \n&lt;td&gt;td cell 2, child of tbody element&lt;/td&gt; \n&lt;/tr&gt; \n&lt;/tbody&gt; \n&lt;tfoot&gt; \n&lt;tr&gt; \n&lt;td&gt;td cell 1, child of tfoot element&lt;/td&gt; \n&lt;td&gt;td cell 2, child of tfoot element&lt;/td&gt; \n&lt;/tr&gt; \n&lt;/tfoot&gt; \n&lt;/table&gt;",
+      "example" : "&lt;table style=\"border: 1px solid black;\"&gt;\n &lt;thead&gt;\n &lt;tr&gt;\n &lt;th&gt;Column 1&lt;/th&gt;\n&lt;th&gt;Column 2&lt;/th&gt; &lt;/tr&gt;\n &lt;/thead&gt;\n &lt;tbody&gt;\n &lt;tr&gt;\n &lt;td&gt;td cell 1, child of tbody element&lt;/td&gt;\n&lt;td&gt;td cell 2, child of tbody element&lt;/td&gt;\n &lt;/tr&gt;\n &lt;/tbody&gt;\n &lt;tfoot&gt;\n &lt;tr&gt;\n &lt;td&gt;td cell 1, child of tfoot element&lt;/td&gt;\n&lt;td&gt;td cell 2, child of tfoot element&lt;/td&gt;\n &lt;/tr&gt;\n &lt;/tfoot&gt;\n &lt;/table&gt;",
       "result" : "<table style=\"border: 1px solid black;\">\n<thead>\n<tr>\n<th>Column 1</th>\n<th>Column 2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>td cell 1, child of tbody element</td>\n<td>td cell 2, child of tbody element</td>\n</tr>\n</tbody>\n<tfoot>\n<tr>\n<td>td cell 1, child of tfoot element</td>\n<td>td cell 2, child of tfoot element</td>\n</tr>\n</tfoot>\n</table>"
     },
     "td" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Defines table data that will appear in a cell in the table.",
-      "example" : "&lt;table style=\"border: 1px solid black;\"&gt; \n &lt;thead&gt; \n &lt;tr&gt; \n &lt;th&gt; \nColumn 1&lt;/th&gt; \n &lt;th&gt; \nColumn 2&lt;/th&gt; \n &lt;/tr&gt; \n &lt;/thead&gt; \n &lt;tfoot&gt; \n &lt;tr&gt; \n &lt;td&gt; \ntd cell 1, child of tfoot element&lt;/td&gt; \n &lt;td&gt; \ntd cell 2, child of tfoot element&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tfoot&gt; \n &lt;tbody&gt; \n &lt;tr&gt; \n &lt;td&gt; \ntd cell 1, child of tbody element&lt;/td&gt; \n &lt;td&gt; \ntd cell 2, child of tbody element&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tbody&gt; \n &lt;/table&gt;",
+      "example" : "&lt;table style=\"border: 1px solid black;\"&gt;\n  &lt;thead&gt;\n  &lt;tr&gt;\n  &lt;th&gt; Column 1&lt;/th&gt;\n&lt;th&gt; Column 2&lt;/th&gt;  &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tfoot&gt;\n  &lt;tr&gt;\n  &lt;td&gt; td cell 1, child of tfoot element&lt;/td&gt;\n&lt;td&gt; td cell 2, child of tfoot element&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tfoot&gt;\n  &lt;tbody&gt;\n  &lt;tr&gt;\n  &lt;td&gt; td cell 1, child of tbody element&lt;/td&gt;\n&lt;td&gt; td cell 2, child of tbody element&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;/table&gt;",
       "result" : "<table style=\"border: 1px solid black;\"> <thead> <tr> <th>Column 1</th> <th>Column 2</th> </tr> </thead> <tfoot> <tr> <td>td cell 1, child of tfoot element</td> <td>td cell 2, child of tfoot element</td> </tr> </tfoot> <tbody> <tr> <td>td cell 1, child of tbody element</td> <td>td cell 2, child of tbody element</td> </tr> </tbody> </table>"
     },
     "template" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Structure Tags",
       "description" : "Declares HTML fragments that can be cloned and inserted in the document by script.",
       "example" : "&lt;template&gt;This is the content in the template tag.&lt;/template&gt;",
       "result" : "<template>This is the content in the template tag.</template>"
     },
     "tfoot" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Specifies footer content for a table.",
-      "example" : "&lt;table style=\"border: 1px solid black;\"&gt; \n &lt;thead&gt; \n &lt;tr&gt; \n &lt;th&gt; \nColumn 1&lt;/th&gt; \n &lt;th&gt; \nColumn 2&lt;/th&gt; \n &lt;/tr&gt; \n &lt;/thead&gt; \n &lt;tbody&gt; \n &lt;tr&gt; \n &lt;td&gt; \ntd cell 1, child of tbody element&lt;/td&gt; \n &lt;td&gt; \ntd cell 2, child of tbody element&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tbody&gt; \n &lt;tfoot&gt; \n &lt;tr&gt; \n &lt;td&gt; \ntd cell 1, child of tfoot element&lt;/td&gt; \n &lt;td&gt; \ntd cell 2, child of tfoot element&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tfoot&gt; \n &lt;/table&gt;",
+      "example" : "&lt;table style=\"border: 1px solid black;\"&gt;\n  &lt;thead&gt;\n  &lt;tr&gt;\n  &lt;th&gt; Column 1&lt;/th&gt;\n&lt;th&gt; Column 2&lt;/th&gt;  &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n  &lt;tr&gt;\n  &lt;td&gt; td cell 1, child of tbody element&lt;/td&gt;\n&lt;td&gt; td cell 2, child of tbody element&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;tfoot&gt;\n  &lt;tr&gt;\n  &lt;td&gt; td cell 1, child of tfoot element&lt;/td&gt;\n&lt;td&gt; td cell 2, child of tfoot element&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tfoot&gt;\n  &lt;/table&gt;",
       "result" : "<table style=\"border: 1px solid black;\"> <thead> <tr> <th>Column 1</th> <th>Column 2</th> </tr> </thead> <tbody> <tr> <td>td cell 1, child of tbody element</td> <td>td cell 2, child of tbody element</td> </tr> </tbody> <tfoot> <tr> <td>td cell 1, child of tfoot element</td> <td>td cell 2, child of tfoot element</td> </tr> </tfoot> </table>"
     },
     "th" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Specifies a header cell in a table.",
-      "example" : "&lt;table style=\"border: 1px solid black;\"&gt; \n &lt;thead&gt; \n &lt;tr&gt; \n &lt;th&gt; \nHeader Cell 1&lt;/th&gt; \n &lt;th&gt; \nHeader Cell 2&lt;/th&gt; \n &lt;/tr&gt; \n &lt;/thead&gt; \n &lt;tbody&gt; \n &lt;tr&gt; \n &lt;td&gt; \nBody Cell&lt;/td&gt; \n &lt;td&gt; \nBody Cell&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tbody&gt; \n &lt;tfoot&gt; \n &lt;tr&gt; \n &lt;td&gt; \nFooter Cell&lt;/td&gt; \n &lt;td&gt; \nFooter Cell&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tfoot&gt; \n &lt;/table&gt;",
+      "example" : "&lt;table style=\"border: 1px solid black;\"&gt;\n  &lt;thead&gt;\n  &lt;tr&gt;\n  &lt;th&gt; Header Cell 1&lt;/th&gt;\n&lt;th&gt; Header Cell 2&lt;/th&gt;  &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n  &lt;tr&gt;\n  &lt;td&gt; Body Cell&lt;/td&gt;\n&lt;td&gt; Body Cell&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;tfoot&gt;\n  &lt;tr&gt;\n  &lt;td&gt; Footer Cell&lt;/td&gt;\n&lt;td&gt; Footer Cell&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tfoot&gt;\n  &lt;/table&gt;",
       "result" : "<table style=\"border: 1px solid black;\"> <thead> <tr> <th>Header Cell 1</th> <th>Header Cell 2</th> </tr> </thead> <tbody> <tr> <td>Body Cell</td> <td>Body Cell</td> </tr> </tbody> <tfoot> <tr> <td>Footer Cell</td> <td>Footer Cell</td> </tr> </tfoot> </table>"
     },
     "thead" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Groups the header content in a table.",
-      "example" : "&lt;table style=\"border: 1px solid black;\"&gt; \n &lt;thead&gt; \n &lt;tr&gt; \n &lt;th&gt; \nColumn 1&lt;/th&gt; \n &lt;th&gt; \nColumn 2&lt;/th&gt; \n &lt;/tr&gt; \n &lt;/thead&gt; \n &lt;tbody&gt; \n &lt;tr&gt; \n &lt;td&gt; \ntd cell 1, child of tbody element&lt;/td&gt; \n &lt;td&gt; \ntd cell 2, child of tbody element&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tbody&gt; \n &lt;tfoot&gt; \n &lt;tr&gt; \n &lt;td&gt; \ntd cell 1, child of tfoot element&lt;/td&gt; \n &lt;td&gt; \ntd cell 2, child of tfoot element&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tfoot&gt; \n &lt;/table&gt;",
+      "example" : "&lt;table style=\"border: 1px solid black;\"&gt;\n  &lt;thead&gt;\n  &lt;tr&gt;\n  &lt;th&gt; Column 1&lt;/th&gt;\n&lt;th&gt; Column 2&lt;/th&gt;  &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n  &lt;tr&gt;\n  &lt;td&gt; td cell 1, child of tbody element&lt;/td&gt;\n&lt;td&gt; td cell 2, child of tbody element&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;tfoot&gt;\n  &lt;tr&gt;\n  &lt;td&gt; td cell 1, child of tfoot element&lt;/td&gt;\n&lt;td&gt; td cell 2, child of tfoot element&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tfoot&gt;\n  &lt;/table&gt;",
       "result" : "<table style=\"border: 1px solid black;\"><thead><tr><th>Column 1</th><th>Column 2</th></tr></thead><tbody><tr><td>td cell 1, child of tbody element</td><td>td cell 2, child of tbody element</td></tr></tbody><tfoot><tr><td>td cell 1, child of tfoot element</td><td>td cell 2, child of tfoot element</td></tr></tfoot></table>"
     },
     "time" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies a date/time.",
       "example" : "&lt;time datetime=\"2000-01-01 00:00:00\"&gt; &lt;/time&gt;",
       "result" : "<time datetime=\"2000-01-01 00:00:00\"></time>"
     },
     "title" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Metadata Tags",
       "description" : "Defines the title for the document.",
       "example" : "&lt;title&gt;Title Example&lt;title&gt;",
       "result" : "<i>Note that the title appears on the tab of a browser, so no practical result will be placed.</i>"
     },
     "tr" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Table Tags",
       "description" : "Specifies a row in the table.",
-      "example" : "&lt;table style=\"border: 1px solid black;\"&gt; \n &lt;thead&gt; \n &lt;tr&gt; \n &lt;th&gt; \nRow 1&lt;/th&gt; \n &lt;th&gt; \nRow 1&lt;/th&gt; \n &lt;/tr&gt; \n &lt;/thead&gt; \n &lt;tbody&gt; \n &lt;tr&gt; \n &lt;td&gt; \nRow 2&lt;/td&gt; \n &lt;td&gt; \nRow 2&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tbody&gt; \n &lt;tfoot&gt; \n &lt;tr&gt; \n &lt;td&gt; \nRow 3&lt;/td&gt; \n &lt;td&gt; \nRow 3&lt;/td&gt; \n &lt;/tr&gt; \n &lt;/tfoot&gt; \n &lt;/table&gt;",
+      "example" : "&lt;table style=\"border: 1px solid black;\"&gt;\n  &lt;thead&gt;\n  &lt;tr&gt;\n  &lt;th&gt; Row 1&lt;/th&gt;\n&lt;th&gt; Row 1&lt;/th&gt;  &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n  &lt;tr&gt;\n  &lt;td&gt; Row 2&lt;/td&gt;\n&lt;td&gt; Row 2&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tbody&gt;\n  &lt;tfoot&gt;\n  &lt;tr&gt;\n  &lt;td&gt; Row 3&lt;/td&gt;\n&lt;td&gt; Row 3&lt;/td&gt;  &lt;/tr&gt;\n  &lt;/tfoot&gt;\n  &lt;/table&gt;",
       "result" : "<table style=\"border: 1px solid black;\"> <thead> <tr> <th>Row 1</th> <th>Row 1</th> </tr> </thead> <tbody> <tr> <td>Row 2</td> <td>Row 2</td> </tr> </tbody> <tfoot> <tr> <td>Row 3</td> <td>Row 3</td> </tr> </tfoot> </table>"
     },
     "track" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Link Tags",
       "description" : "Specifies a text track for media such as video and audio.",
-      "example" : "&lt;video controls&gt; \n &lt;source src=\"assets/jellies.mp4\" type=\"video/mp4\"&gt; \n &lt;track kind=\"subtitles\" src=\"assets/jellies.vtt\" srclang=\"en\" label=\"English\"&gt; \n &lt;/video&gt;",
+      "example" : "&lt;video controls&gt;\n  &lt;source src=\"assets/jellies.mp4\" type=\"video/mp4\"&gt;\n  &lt;track kind=\"subtitles\" src=\"assets/jellies.vtt\" srclang=\"en\" label=\"English\"&gt;\n  &lt;/video&gt;",
       "result" : "<video controls> <source src=\"assets/jellies.mp4\" type=\"video/mp4\"> <track kind=\"subtitles\" src=\"assets/jellies.vtt\" srclang=\"en\" label=\"English\"> </video>"
     },
     "u" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies underlined text.",
       "example" : "&lt;u&gt;This is example of underlined text using the u tag.&lt;/u&gt;",
       "result" : "<u>This is example of underlined text using the u tag.</u>"
     },
     "ul" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "List Tags",
       "description" : "Defines an unordered list.",
-      "example" : "&lt;ul&gt; \n &lt;li&gt; \nWater&lt;/li&gt; \n &lt;li&gt; \nMilkshake&lt;/li&gt; \n &lt;li&gt; \nCoffee&lt;/li&gt; \n &lt;li&gt; \nSmoothie&lt;/li&gt; \n &lt;/ul&gt;",
+      "example" : "&lt;ul&gt;\n  &lt;li&gt;\n Water&lt;/li&gt;\n  &lt;li&gt;\n Milkshake&lt;/li&gt;\n  &lt;li&gt;\n Coffee&lt;/li&gt;\n  &lt;li&gt;\n Smoothie&lt;/li&gt;\n  &lt;/ul&gt;",
       "result" : "<ul> <li>Water</li> <li>Milkshake</li> <li>Coffee</li> <li>Smoothie</li> </ul>"
     },
     "var" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Defines a variable.",
       "example" : "&lt;var&gt;x&lt;/var&gt; &lt;p&gt;This is an example of a var tag in use, it is used to differentiate between variables and regular text.&lt;/p&gt;",
       "result" : "<var>x</var> <p>This is an example of a var tag in use, it is used to differentiate between variables and regular text.</p>"
     },
     "video" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Image & Object Tags",
       "description" : "Specifies a video.",
-      "example" : "&lt;video width=\"360\" height=\"240\" controls&gt; \n &lt;source src=\"assets/SampleVideo_360x240_1mb.mp4\"type=\"video/mp4\"&gt; \n &lt;/video&gt;",
+      "example" : "&lt;video width=\"360\" height=\"240\" controls&gt;\n  &lt;source src=\"assets/SampleVideo_360x240_1mb.mp4\"type=\"video/mp4\"&gt;\n  &lt;/video&gt;",
       "result" : "<video width=\"360\" height=\"240\" controls> <source src=\"assets/SampleVideo_360x240_1mb.mp4\" type=\"video/mp4\"> </video>"
     },
     "wbr" : {
-      "attributes" : "none",
+      "attributes" : "There are no attributes specific to this tag.",
       "category" : "Text Tags",
       "description" : "Specifies a line break opportunity for very long words and strings of text with no spaces.",
       "example" : "&lt;p&gt;One&lt;wbr&gt;morning,&lt;wbr&gt;when&lt;wbr&gt;Gregor&lt;wbr&gt;Samsa&lt;wbr&gt;woke&lt;wbr&gt;from&lt;wbr&gt;troubled&lt;wbr&gt;dreams,&lt;wbr&gt;he&lt;wbr&gt;found&lt;wbr&gt;himself&lt;wbr&gt;transformed&lt;wbr&gt;in&lt;wbr&gt;his&lt;wbr&gt;bed&lt;wbr&gt;into&lt;wbr&gt;a&lt;wbr&gt;horrible&lt;wbr&gt;vermin.&lt;/p&gt;",
