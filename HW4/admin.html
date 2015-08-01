@@ -106,11 +106,13 @@
 					// look for tag 
 					var firebase = new Firebase('https://boiling-heat-3594.firebaseio.com/tags/' + tagName),
 						found = false;
+				  var currentRecord;
 		    		firebase.on("value", function(snapshot) {
 						var activeRecord;
 				        // Retrieves every category from the database and creates a button for it.
 						$(snapshot).each(function () {
 							var record = this,
+							currentRecord = record.key(),
 								key = record.key();
 								
 							if (key == tagName) {
@@ -157,7 +159,7 @@
 								btnGroup.hide();
 								if (!confirm("This is untested. Continue?"))
 									return;
-								firebase.remove(onComplete);
+								firebase.child(currentRecord).remove(onComplete);
 								
 							}, onComplete);
 						}
