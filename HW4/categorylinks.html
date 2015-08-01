@@ -16,8 +16,8 @@
         return vars;
      	}
       
-      	var thisCategory = getParam()["id"];
-	  
+      	var thisCategory = getParam()["id"].replace(/_/g," ");
+      	
 	</script>
 	<style>
 		@media (max-width: 768px) {
@@ -38,11 +38,11 @@
             // For each tag
 			snapshot.forEach(function(tagChild) {
 				// Check to see if in this category
-                var categoryName = snapshot.child("category").val();
-				if categoryName == thisCategory{
+        var categoryName = tagChild.child("category").val();
+				if (categoryName == thisCategory) {
 					// category matches, dump it to table
-	                var categoryDesc = tagChild.child("description").val();
-                	$("#categoryList").append("<tr><td><a href=\"tag.html?id="+tagChild.key()+"\">"+categoryName+"</a></td><td>" + categoryDesc + "</td> </tr>");
+	        var categoryDesc = tagChild.child("description").val();
+          $("#categoryList").append("<tr><td><a href=\"tag.html?id="+snapshot.key()+"\">"+categoryName+"</a></td><td>" + categoryDesc + "</td> </tr>");
 				}
 			})
 			document.title =  thisCategory;

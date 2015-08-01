@@ -42,7 +42,7 @@
       // Connect to our Firebase database.
       var tagSearch = new Firebase('https://boiling-heat-3594.firebaseio.com');
       var htmlForPath = {};
-        
+
       // Search the database for the rest of the page's information.
       tagSearch.child("tags/"+first).on("value", function(snapshot) {
         category = snapshot.child("category").val();
@@ -50,7 +50,7 @@
         example = snapshot.child("example").val();
         result = snapshot.child("result").val();
         attributes = snapshot.child("attributes").val();
-        
+
         document.getElementById("tagName").innerHTML = "&lt;" + first + "&gt; Element";
         document.title = "<" + first + "> Element";
         document.getElementById("category").innerHTML = category;
